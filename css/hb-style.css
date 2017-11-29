@@ -1,13 +1,18 @@
-
-
-
-
-
-
-
-
-
-
+.reg-main{margin:80px auto;min-height: 200px;}
+.reg-box{width: 320px;margin: 0 auto;padding:20px 40px 40px 40px;background: #fff;box-shadow:0 3px 12px rgba(52,63,75,.06);border-radius:4px;}
+.read-end{vertical-align: 0;margin-right:5px;}
+.icon-success img{width: 40px;}
+/*安全中心*/
+.center-left,.center-right{width:20%;background: #fff;color: #5a6978;min-height: 300px;}
+.center-right{width:80%;color: #767d85;border-left: 1px solid #eeeff0;background: #fafafb;margin-left: -1px;}
+.right-inner{width:98%;border-radius:5px;box-shadow:0 3px 12px rgba(52,63,75,.06);margin:20px 0;color: #767d85;background: #fff;}
+.center-left{line-height:45px;padding:10px 0 40px 0;}
+.left-title{padding-left: 20px;}
+.nav-item a{display: block;color: #5a6978;padding-left:30px;}
+.nav-item a.check{background: #4b8cee;color: #fff;}
+.right-top{border-bottom: 1px solid #eeeff0;padding: 15px 0;}
+.right-main{padding:10px 20px 50px 20px;}
+.md-form-update{width:35%;}
 
 
 
