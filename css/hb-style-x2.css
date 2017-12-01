@@ -1,0 +1,28 @@
+@media screen and (min-width:1900px) {
+	/*font-size*/
+	.font14{font-size: 28px;}
+	.font16{font-size: 32px;}
+	.font18{font-size: 36px;}
+	.font20{font-size: 40px;}
+	.mart20{margin-top: 40px!important;}
+	.mart30{margin-top: 60px!important;}
+	.mart40{margin-top: 80px!important;}
+	.mart70{margin-top: 140px!important;}
+	.header-top{height: 80px;}
+	.header-nav li a{height:200px;line-height: 200px;}
+	.footer{font-size: 22px;}
+	.logo-normal{
+		/* 普通显示屏(设备像素比例小于等于1.3)使用1倍的图 */
+		width: 440px;
+		height: 120px;
+		background-image: url('../img/logo2@x2.png');
+		margin-top: -60px;
+	}
+	.footer-logo{/* 高清显示屏(设备像素比例大于等于1.5)使用2倍图  */
+		width: 290px;
+		height: 60px;
+		background-image: url('../img/logo@x2.png');
+	}
+	.icon-up,.icon-down{width: 10px;height: 18px;
+	.banner-ul{height:800px;position: relative;}
+}

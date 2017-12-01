@@ -46,7 +46,7 @@ nav ul {
 blockquote, q {
 	quotes:none;
 }
-
+em,i{font-style: normal;}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content:'';
@@ -124,13 +124,14 @@ input, select {
 	zoom: 1
 }
 /*margin*/
-.mart10{margin-top: 10px!important;}
-.mart15{margin-top: 15px!important;}
-.mart20{margin-top: 20px!important;}
-.mart30{margin-top: 30px!important;}
-.mart40{margin-top: 40px!important;}
-.mart50{margin-top: 50px!important;}
-.mart70{margin-top: 70px!important;}
+.mart10{margin-top: 10px;}
+.mart15{margin-top: 15px;}
+.mart20{margin-top: 20px;}
+.mart30{margin-top: 30px;}
+.mart40{margin-top: 40px;}
+.mart50{margin-top: 50px;}
+.mart70{margin-top: 70px;}
+.marl10{margin-left: 10px;}
 .marl20{margin-left: 20px;}
 .marl40{margin-left:40px;}
 /*color*/
@@ -140,8 +141,11 @@ input, select {
 .color-link{color: #4b8cee;}
 .color-high{color: #2a3541;}
 .color-light{color: #767d85;}
+.color-grey{color: #acb2b8;}
 a.color-link:hover{text-decoration: underline;}
 .strong{font-weight: bold;}
+/*width*/
+.width-145{width: 145px;}
 /*font-size*/
 .font13{font-size: 13px;}
 .font14{font-size: 14px;}
@@ -183,6 +187,17 @@ a.color-link:hover{text-decoration: underline;}
 	top:50%;
 	margin-top: -20px;
 }
+.logo-normal{
+	/* 普通显示屏(设备像素比例小于等于1.3)使用1倍的图 */
+	width: 220px;
+	height: 60px;
+	background-size: 100%;
+	background-image: url('../img/logo2@x1.png');
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top: -30px;
+}
 .footer{height: 265px;background: #3b4045;color:#b1bcc8;}
 .footer-logo{
 	/* 普通显示屏(设备像素比例小于等于1.3)使用1倍的图 */
@@ -204,9 +219,10 @@ a.color-link:hover{text-decoration: underline;}
 /*form*/
 .md-form{width: 100%;color: #767d85;}
 .md-form-item{margin-bottom:10px;}
+.md-form-update .md-form-item{margin-bottom:20px;}
 .md-form-item:last-child{margin-bottom:0;}
-.md-form-item_label{display: inline-block;line-height:20px;color: #767d85;margin-bottom:5px;font-size: 13px;}
-.md-input_inner{
+.md-form-item_label{display: inline-block;line-height:20px;color: #767d85;margin-bottom:5px;}
+.md-input_inner,.md-select{
 	-webkit-appearance: none;
 	background-color: #fff;
 	background-image: none;
@@ -221,7 +237,7 @@ a.color-link:hover{text-decoration: underline;}
 	padding: 0 15px;
 	transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 	width: 100%;
-	font-size: 14px;
+	font-size: 13px;
 }
 .md-input_inner:focus {
 	outline: none;
@@ -249,6 +265,10 @@ a.color-link:hover{text-decoration: underline;}
 	background: #fafbfd;
 	color:#767d85;
 }
+.md-form-item_content{color: #2a3541;font-size: 13px;}
+.md-form-label-left .md-form-item_content{display: inline-block;}
+.md-form-inline .md-form-item{display: inline-block;}
+.md-sf-inline .md-form-item{width:20%;}
 .md-button {
 	display: inline-block;
 	line-height: 1;
@@ -262,7 +282,6 @@ a.color-link:hover{text-decoration: underline;}
 	text-align: center;
 	box-sizing: border-box;
 	outline: none;
-	margin: 0;
 	transition: .1s;
 	font-weight: 500;
 	-moz-user-select: none;
