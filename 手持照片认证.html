@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
-    <title>身份证认证-已认证</title>
+    <title>手持照片认证</title>
     <link href="css/global.css" rel="stylesheet">
     <link href="css/hb-style.css" rel="stylesheet">
     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
@@ -79,11 +79,11 @@
                 </div>
                 <p class="left-title font13">身份认证</p>
                 <div class="nav-item mart10">
-                    <a href="#" class="check clearfix">
+                    <a href="#" class="clearfix">
                         <span>身份证实名认证</span>
                         <!--<em class="pull-right">未认证</em>-->
                     </a>
-                    <a href="#" class="clearfix">
+                    <a href="#" class="check clearfix">
                         <span>手持照片认证</span>
                         <em class="pull-right">未认证</em>
                     </a>
@@ -91,8 +91,8 @@
                 <p class="left-title font13">交易设置</p>
                 <div class="nav-item mart10">
                     <a href="#" class="clearfix">
-                        <span>银行转帐</span>
-                        <!--<em class="pull-right">未开启</em>-->
+                        <span>银行转帐（绑定）</span>
+                        <em class="pull-right">未开启</em>
                     </a>
                     <a href="#" class="clearfix">
                         <span>微信收款码</span>
@@ -109,34 +109,65 @@
             <div class="center-right pull-right clearfix">
                 <div class="right-inner pull-right">
                     <div class="right-top">
-                        <p class="font14 color-high marl20">身份证实名认证</p>
+                        <p class="font14 color-high marl20">手持照片认证</p>
                         <p class="mart10 marl20">为了您的资金安全，需验证您的身份才可进行其他操作；认证信息一经验证不能修改，请务必如实填写。</p>
                     </div>
                     <div class="right-main">
-                        <p class="mart20 color-high">
-                            <span class="sfz-success"><img src="img/icon-success.png"></span>
-                            <span>恭喜您，已完成身份证实名认证!</span>
-                        </p>
-                        <div class="md-form md-form-inline md-sf-inline mart30">
-                            <div class="md-form-item">
-                                <label class="md-form-item_label">国籍</label>
-                                <div class="md-form-item_content mart20">
-                                    <span>中国</span>
+                        <div class="md-uploader mart20">
+                            <div class="clearfix">
+                                <span class="pull-left">身份证正面照</span>
+                                <div class="relative" style="margin-left: 80px;">
+                                    <i class="icon icon-info"></i>
+                                    <div class="message-pop" style="margin-top: -28px;">
+                                        <p>必须能看清证件号和姓名，支持jpg／jpeg。</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="md-form-item">
-                                <label class="md-form-item_label">姓名</label>
-                                <div class="md-form-item_content mart20">
-                                    <span>刘德华</span>
+                            <div class="mart10 clearfix">
+                                <div class="md-upload pull-left">
+                                    <p class="img-auto"><img src="img/sf-1.png"></p>
+                                    <input type="file" name="file">
                                 </div>
-                            </div>
-                            <div class="md-form-item">
-                                <label class="md-form-item_label">身份证号</label>
-                                <div class="md-form-item_content mart20">
-                                    <span>132038475893403895</span>
-                                </div>
+                                <div class="upload-demo pull-left marl40"><img src="img/sl-1.jpg"></div>
                             </div>
                         </div>
+                        <div class="md-uploader mart20">
+                            <div class="mart20 clearfix">
+                                <span class="pull-left">手持身份证照</span>
+                            </div>
+                            <div class="mart10 clearfix">
+                                <div class="md-upload pull-left">
+                                    <p class="img-auto"><img src="img/sf-2.png"></p>
+                                    <input type="file" name="file">
+                                </div>
+                                <div class="upload-demo pull-left marl40"><img src="img/sl-2.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="md-uploader mart20">
+                            <div class="mart20 clearfix">
+                                <span class="pull-left">手持身份证照</span>
+                                <div class="relative" style="margin-left: 80px;">
+                                    <i class="icon icon-info"></i>
+                                    <div class="message-pop" style="margin-top: -80px;">
+                                        <p>1. 照片需免冠，建议未化妆，手持证件人的五官清晰可见，完整露出双手手臂。</p>
+                                        <p>2. 照片内容真实有效，不得做任何修改。</p>
+                                        <p>3. 支持jpg/jpeg/png格式，最大不超过5M。</p>
+                                        <p>4. 手写文案<span style="color: #b7d4fe">「我在houbee上的所有行为均为本人操作，并愿意承担本账户用于
+                                            洗钱、传销、非法换汇等一切的法律后果。」</span>（附上自己签名以及当天日期）</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mart10 clearfix">
+                                <div class="md-upload pull-left">
+                                    <p class="img-auto"><img src="img/sf-3.png"></p>
+                                    <input type="file" name="file">
+                                </div>
+                                <div class="upload-demo pull-left marl40"><img src="img/sl-3.jpg"></div>
+                            </div>
+                        </div>
+                        <p class="mart30" style="width:35%;">
+                            <button type="button" class="md-button md-button-primary md-button-block"><span>确定提交</span></button>
+                        </p>
                     </div>
                 </div>
             </div>

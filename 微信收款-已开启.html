@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
-    <title>身份证认证-已认证</title>
+    <title>微信收款-已开启</title>
     <link href="css/global.css" rel="stylesheet">
     <link href="css/hb-style.css" rel="stylesheet">
     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
@@ -79,9 +79,9 @@
                 </div>
                 <p class="left-title font13">身份认证</p>
                 <div class="nav-item mart10">
-                    <a href="#" class="check clearfix">
+                    <a href="#" class="clearfix">
                         <span>身份证实名认证</span>
-                        <!--<em class="pull-right">未认证</em>-->
+                        <em class="pull-right">未认证</em>
                     </a>
                     <a href="#" class="clearfix">
                         <span>手持照片认证</span>
@@ -94,9 +94,9 @@
                         <span>银行转帐</span>
                         <!--<em class="pull-right">未开启</em>-->
                     </a>
-                    <a href="#" class="clearfix">
+                    <a href="#" class="check clearfix">
                         <span>微信收款码</span>
-                        <em class="pull-right">未开启</em>
+                        <!--<em class="pull-right">未开启</em>-->
                     </a>
                     <a href="#" class="clearfix">
                         <span>支付宝收款码</span>
@@ -109,34 +109,41 @@
             <div class="center-right pull-right clearfix">
                 <div class="right-inner pull-right">
                     <div class="right-top">
-                        <p class="font14 color-high marl20">身份证实名认证</p>
-                        <p class="mart10 marl20">为了您的资金安全，需验证您的身份才可进行其他操作；认证信息一经验证不能修改，请务必如实填写。</p>
+                        <p class="font14 color-high marl20">
+                            <span>微信收款码</span>
+                            <span class="color-up">（已开启）</span>
+                        </p>
+                        <p class="mart10 marl20">设置微信支付二维码，收付款极速达到</p>
                     </div>
                     <div class="right-main">
-                        <p class="mart20 color-high">
-                            <span class="sfz-success"><img src="img/icon-success.png"></span>
-                            <span>恭喜您，已完成身份证实名认证!</span>
-                        </p>
-                        <div class="md-form md-form-inline md-sf-inline mart30">
+                        <form class="md-form md-form-label-left md-form-update mart30">
                             <div class="md-form-item">
-                                <label class="md-form-item_label">国籍</label>
-                                <div class="md-form-item_content mart20">
-                                    <span>中国</span>
+                                <label class="md-form-item_label" style="width: 90px;">收款人姓名：</label>
+                                <div class="md-form-item_content">
+                                    <span>习大大</span>
                                 </div>
                             </div>
                             <div class="md-form-item">
-                                <label class="md-form-item_label">姓名</label>
-                                <div class="md-form-item_content mart20">
-                                    <span>刘德华</span>
+                                <label class="md-form-item_label" style="width: 90px;">微信支付账号：</label>
+                                <div class="md-form-item_content">
+                                    <span>北京中南海支行</span>
                                 </div>
                             </div>
                             <div class="md-form-item">
-                                <label class="md-form-item_label">身份证号</label>
-                                <div class="md-form-item_content mart20">
-                                    <span>132038475893403895</span>
+                                <label class="md-form-item_label" style="width: 90px;vertical-align: top">支付收款码：</label>
+                                <div class="md-form-item_content">
+                                    <div class="md-upload-wechat">
+                                        <p class="img-auto"><img src="img/code.jpg"></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="md-form-item">
+                                <div class="md-form-item_content">
+                                    <button type="button" class="md-button md-button-primary mart30 width-145"><span>关闭使用</span></button>
+                                    <button type="button" class="md-button md-button-primary mart30 width-145 marl10"><span>更改微信收款码</span></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

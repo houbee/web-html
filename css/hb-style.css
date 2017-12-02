@@ -45,17 +45,17 @@
 .bt-line{display:inline-block;width:35px;height: 3px;background: #4a8dee;}
 .news-ul li{display: inline-block;width: 30%;float: left;line-height: 1.6;padding-bottom:45px;}
 .news-ul li:nth-child(2){margin: 0 5%;}
-
-
-
-
-
-
-
-
-
-
-
+/*关于我们*/
+.about-txt{height:450px;margin-top: -450px;}
+.content{box-shadow:0 4px 12px rgba(52,63,75,.06);background: #fff;margin: 45px auto;padding: 35px 0;}
+.content p{padding:0 80px;}
+.info-box{width: 420px;height:320px;background: rgba(255,255,255,.9);}
+.info-box p{padding:0 20px 0 60px;}
+.our-link li{display: inline-block;float: left;width: 25%;text-align: center;padding:180px 0;position: relative;}
+.our-link li p img{width: 90px;}
+.info-pop{height:200px;position: absolute;background: #fff;box-shadow:0 3px 12px rgba(52,63,75,.06);top:5%;left:0;right:0;opacity: 0;z-index: -1;}
+.info-pop p.mart40 img{border-radius:50%;width:70px;}
+.our-link li:hover .info-pop{opacity: 1;z-index: 0;top:-5%;transition: 0.3s;}
 
 
 
