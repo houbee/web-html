@@ -214,6 +214,7 @@ a.color-link:hover{text-decoration: underline;}
 	left:0;
 	top:50%;
 	margin-top: -30px;
+	background-repeat: no-repeat;
 }
 .footer{height: 265px;background: #3b4045;color:#b1bcc8;}
 .footer-logo{
@@ -223,6 +224,8 @@ a.color-link:hover{text-decoration: underline;}
 	background-size: 100%;
 	background-image: url('../img/logo_grey@x1.png');
 	margin-top: 25px;
+	background-repeat: no-repeat;
+	background-position: right 0;
 }
 .header-top{height:40px;line-height:40px;background: #3b4045;color:#b1bcc8;}
 /*.header-main{height:100px;}*/

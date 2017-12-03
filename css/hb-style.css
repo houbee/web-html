@@ -1,5 +1,5 @@
 .reg-main{margin:80px auto;min-height: 200px;}
-.reg-box{width: 320px;margin: 0 auto;padding:20px 40px 40px 40px;background: #fff;box-shadow:0 3px 12px rgba(52,63,75,.06);border-radius:4px;}
+.reg-box{width: 320px;margin: 0 auto;padding:40px;background: #fff;box-shadow:0 3px 12px rgba(52,63,75,.06);border-radius:4px;}
 .read-end{vertical-align: 0;margin-right:5px;}
 .icon-success img{width: 40px;}
 .sfz-success{display: inline-block;vertical-align: middle;margin-right:5px;}
@@ -20,7 +20,8 @@
 
 /*index*/
 .banner-ul{height:450px;position: relative;}
-.banner-ul li{display:block;width:100%;background-size:auto 450px;background-position: center center;position: absolute;top:0;left:0;bottom:0;opacity: 0;z-index: -2;}
+.banner-ul li{display:block;width:100%;background-size:auto 450px;background-position: center center;
+	position: absolute;top:0;left:0;bottom:0;opacity: 0;z-index: -2;background-repeat: no-repeat;}
 .banner-ul li.show{opacity: 1;-webkit-transition: 0.3s;transition: 0.3s;z-index:0;}
 .banner-progress{width:100%;height:5px;position: absolute;left:0;bottom:0;
 	background-image:-webkit-linear-gradient(to right, #00daff, #4a8dee);
@@ -57,6 +58,68 @@
 .info-pop p.mart40 img{border-radius:50%;width:70px;}
 .our-link li:hover .info-pop{opacity: 1;z-index: 0;top:-5%;transition: 0.3s;}
 
+
+@media screen and (min-width:1900px) {
+	body{font-size: 14px;}
+	.container-fluid{width: 1920px;margin: 0 auto;}
+	.container{width: 1415px;}
+	.container-mini{width: 1415px;}
+	/*icon*/
+	.icon-up,.icon-down{width:8px;height:15px;background-size: 100%;vertical-align:-1px;}
+	.icon-down{vertical-align:-3px;}
+	.icon-location, .icon-phone, .icon-mail{width: 20px;height: 20px;}
+	/*font-size*/
+	.font12{font-size: 14px;}
+	.font13{font-size: 15px;}
+	.font14{font-size: 18px;}
+	.font16{font-size: 19px;}
+	.font18{font-size: 20px;}
+	.font20{font-size: 24px;}
+	.font30{font-size: 35px;}
+	.font34{font-size: 40px;}
+	/*margin*/
+	.mart30{margin-top: 36px;}
+	.mart40{margin-top: 46px;}
+	.header-top{height: 48px;line-height:48px;}
+	.header-nav li a{height:120px;line-height:120px;}
+	.reg-nav li a,.header-reg .container{height:96px;line-height: 96px;}
+	.footer{font-size:15px;}
+	.footer-nav li{padding-top: 40px;}
+	.footer-logo{margin-top: 30px;}
+	.logo{
+		/* 普通显示屏(设备像素比例小于等于1.3)使用1倍的图 */
+		width: 176px;
+		height: 48px;
+		background-image: url('../img/logo@x2.png');
+		margin-top: -24px;
+	}
+	.logo-normal{
+		/* 普通显示屏(设备像素比例小于等于1.3)使用1倍的图 */
+		width: 264px;
+		height: 72px;
+		background-image: url('../img/logo2@x2.png');
+		margin-top: -36px;
+	}
+	.footer-logo{/* 高清显示屏(设备像素比例大于等于1.5)使用2倍图  */
+		width: 290px;
+		height: 60px;
+		background-image: url('../img/logo@x2.png');
+		background-size: auto 100%;
+
+	}
+	.banner-ul{height:540px;position: relative;}
+	.banner-ul li{background-size: auto 540px;}
+	.info-box{width: 500px;height: 380px;}
+	.about-txt,.login-out{height: 540px;margin-top: -540px;}
+	.info-pop{height: 240px;}
+	.our-link li:hover .info-pop{top:-14%;}
+	.login-form{width: 336px;}
+	.md-input_inner, .md-select{height: 46px;font-size: 14px;}
+	.md-form-code .md-input + .send{height:43px;margin-left:-1px;}
+	.hq-nav ul li{width: 283px;}
+	.reg-box{width: 384px;padding:48px;}
+	.icon-success img{width: 48px;}
+}
 
 
 
