@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
+    <title>列表</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load("body", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//全局默认字体
+        $youziku.load(".PingFangSC_L", "4997c0be14e24128a91eba4ff7d3df99", "PingFangSC_L");//苹方纤黑
+        $youziku.load(".PingFangSC_R", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//苹方细黑
+        $youziku.load(".PingFangSC", "d31e2c91332b470090369540755c109f", "PingFangSC");//苹方黑体
+        $youziku.draw();
+    </script>
+</head>
+<body>
+<div class="header clearfix">
+    <a href="#" class="logo pull-left"></a>
+    <div class="pull-right">
+        <span>欢迎回来，18688886666</span>
+        <em>|</em>
+        <a href="#">返回首页</a>
+        <em>|</em>
+        <a href="#" class="color-link">退出登录</a>
+    </div>
+    <div class="search-box pull-right mart15">
+        <input class="ser-input_inner pull-left">
+        <button class="search-btn icon icon-ser"></button>
+    </div>
+</div>
+<div class="left">
+    <div class="menu-item show-menu">
+        <p>运维管理</p>
+        <ul>
+            <li><a href="#">用户管理</a></li>
+            <li class="current"><a href="#">每日对账</a></li>
+            <li><a href="#">转账审核</a></li>
+            <li><a href="#">日志</a></li>
+            <li><a href="#">公告管理</a></li>
+        </ul>
+    </div>
+    <div class="menu-item">
+        <p>设置</p>
+        <ul>
+            <li><a href="#">交易时间设置</a></li>
+            <li><a href="#">提充币设置</a></li>
+            <li><a href="#">交易设置</a></li>
+            <li><a href="#">审核设置</a></li>
+        </ul>
+    </div>
+    <div class="menu-item">
+        <p>货币管理</p>
+        <ul>
+            <li><a href="#">订单管理</a></li>
+            <li><a href="#">转帐管理</a></li>
+        </ul>
+    </div>
+</div>
+<div class="right">
+    <div class="md-tabs">
+        <a href="#" class="active">待审核</a>
+        <a href="#">已审核</a>
+    </div>
+    <div class="screen-box">
+        <form class="md-form md-form-inline marl20">
+            <div class="md-form-item">
+                <label class="md-form-item_label">选项卡</label>
+                <div class="md-form-item_content" style="width: 120px;">
+                    <div class="md-input">
+                        <select class="md-select">
+                            <option>选项1</option>
+                            <option>选项2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item">
+                <label class="md-form-item_label">选项卡</label>
+                <div class="md-form-item_content" style="width: 120px;">
+                    <div class="md-input">
+                        <select class="md-select">
+                            <option>选项1</option>
+                            <option>选项2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item">
+                <label class="md-form-item_label">开始时间</label>
+                <div class="md-form-item_content" style="width: 180px;">
+                    <div class="md-input input-time">
+                        <input class="md-input_inner">
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item">
+                <label class="md-form-item_label">结束时间</label>
+                <div class="md-form-item_content" style="width: 180px;">
+                    <div class="md-input input-time">
+                        <input class="md-input_inner input-time">
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item">
+                <div class="md-form-item_content">
+                    <button type="button" class="md-button md-button-primary"><span>查询</span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="data-box">
+        <table class="table-data" width="100%">
+            <thead>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox">
+                            <span>姓名</span>
+                        </label>
+                    </td>
+                    <td><span>转账银行</span></td>
+                    <td><span>银行卡号</span></td>
+                    <td><span>转账金额</span></td>
+                    <td><span>状态</span></td>
+                    <td><span>操作</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox">
+                            <span class="color-link">liudehua</span>
+                        </label>
+                    </td>
+                    <td><span>中国工商银行</span></td>
+                    <td><span>6222 0000 0000 0000</span></td>
+                    <td><span>1,000,000.00</span></td>
+                    <td><span>已到账</span></td>
+                    <td>
+                        <div class="td-inner">
+                            <span class="menu-toggle"></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

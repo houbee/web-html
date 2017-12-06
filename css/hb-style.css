@@ -64,6 +64,7 @@
 	.container-fluid{width: 1920px;margin: 0 auto;}
 	.container{width: 1415px;}
 	.container-mini{width: 1415px;}
+    .header,.header-top,.bg-repeat-y,.header-reg,.footer{width: 100%;}
 	/*icon*/
 	.icon-up,.icon-down{width:8px;height:15px;background-size: 100%;vertical-align:-1px;}
 	.icon-down{vertical-align:-3px;}
