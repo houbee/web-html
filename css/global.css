@@ -321,6 +321,7 @@ a.color-link:hover{text-decoration: underline;}
 .md-form-label-left .md-form-item_content{display: inline-block;}
 .md-form-inline .md-form-item{display: inline-block;}
 .md-sf-inline .md-form-item{width:20%;}
+
 .md-button {
 	display: inline-block;
 	line-height: 1;

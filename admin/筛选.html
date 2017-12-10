@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
-    <title>列表</title>
+    <title>筛选</title>
     <link href="../css/hb-style.css" rel="stylesheet">
     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
     <script type="text/javascript">
@@ -24,10 +24,6 @@
         <a href="#">返回首页</a>
         <em>|</em>
         <a href="#" class="color-link">退出登录</a>
-    </div>
-    <div class="search-box pull-right mart15">
-        <input class="ser-input_inner pull-left">
-        <button class="search-btn icon icon-ser"></button>
     </div>
 </div>
 <div class="left">
@@ -60,17 +56,55 @@
 </div>
 <div class="right">
     <div class="md-tabs">
-        <a href="#" class="active">待审核</a>
-        <a href="#">已审核</a>
+        <span class="font14 mart20 inline-block color-black strong">每日对账</span>
+        <div class="search-box pull-right mart10">
+            <input class="ser-input_inner pull-left" placeholder="Seach">
+            <button class="search-btn icon icon-ser"></button>
+        </div>
     </div>
-    <div class="screen-box">
-        <form class="md-form md-form-inline marl20">
+    <div class="screen-box clearfix">
+        <form class="md-form-inline pull-left marl20">
             <div class="md-form-item">
-                <label class="md-form-item_label">选项卡</label>
-                <div class="md-form-item_content" style="width: 120px;">
+                <label class="md-form-item_label">选择币种</label>
+                <div class="md-form-item_content" style="width: 160px;">
                     <div class="md-input">
                         <div class="md-select">
-                            <p class="md-selected"><span>选项卡</span></p>
+                            <p class="md-selected">
+                                <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                <span>选择币种</span>
+                            </p>
+                            <ul class="md-dropdown">
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item marl20">
+                <label class="md-form-item_label">选项卡</label>
+                <div class="md-form-item_content" style="width: 140px;">
+                    <div class="md-input">
+                        <div class="md-select">
+                            <p class="md-selected"><span>选择币种</span></p>
                             <ul class="md-dropdown">
                                 <li><span>选项1</span></li>
                                 <li><span>选项1</span></li>
@@ -83,29 +117,10 @@
                 </div>
             </div>
             <div class="md-form-item marl20">
-                <label class="md-form-item_label">选项卡</label>
-                <div class="md-form-item_content" style="width: 120px;">
-                    <div class="md-input">
-                        <select class="md-select">
-                            <option>选项1</option>
-                            <option>选项2</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="md-form-item marl20">
                 <label class="md-form-item_label">开始时间</label>
                 <div class="md-form-item_content" style="width: 180px;">
                     <div class="md-input input-time">
                         <input class="md-input_inner">
-                    </div>
-                </div>
-            </div>
-            <div class="md-form-item marl20">
-                <label class="md-form-item_label">结束时间</label>
-                <div class="md-form-item_content" style="width: 180px;">
-                    <div class="md-input input-time">
-                        <input class="md-input_inner input-time">
                     </div>
                 </div>
             </div>
@@ -115,135 +130,154 @@
                 </div>
             </div>
         </form>
+        <span class="md-button md-button-toggle pull-right mart30 marr20 color-link"><span>收起筛选</span></span>
     </div>
     <div class="data-box">
-        <table class="table-data" width="100%">
+        <div class="select-item mart10">
+            <div class="clearfix">
+                <span class="width-90 pull-left">交易类型:</span>
+                <dl>
+                    <dd><span class="color-link">全部</span></dd>
+                    <dd><span>主动买入</span></dd>
+                    <dd><span>主动卖出</span></dd>
+                </dl>
+            </div>
+            <div class="clearfix mart20">
+                <span class="width-90 pull-left">交易方:</span>
+                <dl>
+                    <dd><span>全部</span></dd>
+                    <dd><span class="color-link">买方</span></dd>
+                    <dd><span>卖方</span></dd>
+                </dl>
+            </div>
+        </div>
+        <table class="table-data mart30" width="100%">
             <thead>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox">
-                            <span>姓名</span>
-                        </label>
-                    </td>
-                    <td><span>转账银行</span></td>
-                    <td><span>银行卡号</span></td>
-                    <td><span>转账金额</span></td>
-                    <td><span>状态</span></td>
-                    <td><span>操作</span></td>
-                </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                        <span>姓名</span>
+                    </label>
+                </td>
+                <td><span>转账银行</span></td>
+                <td><span>银行卡号</span></td>
+                <td><span>转账金额</span></td>
+                <td><span>状态</span></td>
+                <td><span>操作</span></td>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox">
-                            <span class="color-link">liudehua</span>
-                        </label>
-                    </td>
-                    <td><span>中国工商银行</span></td>
-                    <td><span>6222 0000 0000 0000</span></td>
-                    <td><span>1,000,000.00</span></td>
-                    <td><span>已到账</span></td>
-                    <td>
-                        <div class="toggle">
-                            <span class="menu-toggle"></span>
-                            <ul class="toggle-list">
-                                <li><a href="#">通过</a></li>
-                                <li><a href="#">驳回</a></li>
-                                <li><a href="#">删除</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox">
-                            <span class="color-link">liudehua</span>
-                        </label>
-                    </td>
-                    <td><span>中国工商银行</span></td>
-                    <td><span>6222 0000 0000 0000</span></td>
-                    <td><span>1,000,000.00</span></td>
-                    <td><span>已到账</span></td>
-                    <td>
-                        <div class="toggle">
-                            <span class="menu-toggle"></span>
-                            <ul class="toggle-list">
-                                <li><a href="#">通过</a></li>
-                                <li><a href="#">驳回</a></li>
-                                <li><a href="#">删除</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox">
-                            <span class="color-link">liudehua</span>
-                        </label>
-                    </td>
-                    <td><span>中国工商银行</span></td>
-                    <td><span>6222 0000 0000 0000</span></td>
-                    <td><span>1,000,000.00</span></td>
-                    <td><span>已到账</span></td>
-                    <td>
-                        <div class="toggle">
-                            <span class="menu-toggle"></span>
-                            <ul class="toggle-list">
-                                <li><a href="#">通过</a></li>
-                                <li><a href="#">驳回</a></li>
-                                <li><a href="#">删除</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox">
-                            <span class="color-link">liudehua</span>
-                        </label>
-                    </td>
-                    <td><span>中国工商银行</span></td>
-                    <td><span>6222 0000 0000 0000</span></td>
-                    <td><span>1,000,000.00</span></td>
-                    <td><span>已到账</span></td>
-                    <td>
-                        <div class="toggle">
-                            <span class="menu-toggle"></span>
-                            <ul class="toggle-list">
-                                <li><a href="#">通过</a></li>
-                                <li><a href="#">驳回</a></li>
-                                <li><a href="#">删除</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox">
-                            <span class="color-link">liudehua</span>
-                        </label>
-                    </td>
-                    <td><span>中国工商银行</span></td>
-                    <td><span>6222 0000 0000 0000</span></td>
-                    <td><span>1,000,000.00</span></td>
-                    <td><span>已到账</span></td>
-                    <td>
-                        <div class="toggle">
-                            <span class="menu-toggle"></span>
-                            <ul class="toggle-list">
-                                <li><a href="#">通过</a></li>
-                                <li><a href="#">驳回</a></li>
-                                <li><a href="#">删除</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                        <span class="color-link">liudehua</span>
+                    </label>
+                </td>
+                <td><span>中国工商银行</span></td>
+                <td><span>6222 0000 0000 0000</span></td>
+                <td><span>1,000,000.00</span></td>
+                <td><span>已到账</span></td>
+                <td>
+                    <div class="toggle">
+                        <span class="menu-toggle"></span>
+                        <ul class="toggle-list">
+                            <li><a href="#">通过</a></li>
+                            <li><a href="#">驳回</a></li>
+                            <li><a href="#">删除</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                        <span class="color-link">liudehua</span>
+                    </label>
+                </td>
+                <td><span>中国工商银行</span></td>
+                <td><span>6222 0000 0000 0000</span></td>
+                <td><span>1,000,000.00</span></td>
+                <td><span>已到账</span></td>
+                <td>
+                    <div class="toggle">
+                        <span class="menu-toggle"></span>
+                        <ul class="toggle-list">
+                            <li><a href="#">通过</a></li>
+                            <li><a href="#">驳回</a></li>
+                            <li><a href="#">删除</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                        <span class="color-link">liudehua</span>
+                    </label>
+                </td>
+                <td><span>中国工商银行</span></td>
+                <td><span>6222 0000 0000 0000</span></td>
+                <td><span>1,000,000.00</span></td>
+                <td><span>已到账</span></td>
+                <td>
+                    <div class="toggle">
+                        <span class="menu-toggle"></span>
+                        <ul class="toggle-list">
+                            <li><a href="#">通过</a></li>
+                            <li><a href="#">驳回</a></li>
+                            <li><a href="#">删除</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                        <span class="color-link">liudehua</span>
+                    </label>
+                </td>
+                <td><span>中国工商银行</span></td>
+                <td><span>6222 0000 0000 0000</span></td>
+                <td><span>1,000,000.00</span></td>
+                <td><span>已到账</span></td>
+                <td>
+                    <div class="toggle">
+                        <span class="menu-toggle"></span>
+                        <ul class="toggle-list">
+                            <li><a href="#">通过</a></li>
+                            <li><a href="#">驳回</a></li>
+                            <li><a href="#">删除</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox">
+                        <span class="color-link">liudehua</span>
+                    </label>
+                </td>
+                <td><span>中国工商银行</span></td>
+                <td><span>6222 0000 0000 0000</span></td>
+                <td><span>1,000,000.00</span></td>
+                <td><span>已到账</span></td>
+                <td>
+                    <div class="toggle">
+                        <span class="menu-toggle"></span>
+                        <ul class="toggle-list">
+                            <li><a href="#">通过</a></li>
+                            <li><a href="#">驳回</a></li>
+                            <li><a href="#">删除</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
             </tbody>
         </table>
         <div class="md-pagination mart30">
@@ -268,7 +302,7 @@
         </div>
     </div>
 </div>
-<div class="mask" style="display: ;"></div>
+<div class="mask" style="display: none;"></div>
 <!--资产情况 begin-->
 <div class="pop">
     <div class="pop-top">
@@ -286,55 +320,55 @@
         </div>
         <table class="table-data mart20" width="100%">
             <thead>
-                <tr>
-                    <td><span>币种</span></td>
-                    <td><span>在途资产</span></td>
-                    <td><span>可用余额</span></td>
-                    <td><span>委托冻结</span></td>
-                    <td><span>资金总计</span></td>
-                </tr>
+            <tr>
+                <td><span>币种</span></td>
+                <td><span>在途资产</span></td>
+                <td><span>可用余额</span></td>
+                <td><span>委托冻结</span></td>
+                <td><span>资金总计</span></td>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
-                        <span>比特币</span>
-                    </td>
-                    <td><span>10.0000</span></td>
-                    <td><span>6222,0000</span></td>
-                    <td><span>1,000,00</span></td>
-                    <td><span>1223,6222,0000</span></td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
-                        <span>比特币</span>
-                    </td>
-                    <td><span>10.0000</span></td>
-                    <td><span>6222,0000</span></td>
-                    <td><span>1,000,00</span></td>
-                    <td><span>1223,6222,0000</span></td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
-                        <span>比特币</span>
-                    </td>
-                    <td><span>10.0000</span></td>
-                    <td><span>6222,0000</span></td>
-                    <td><span>1,000,00</span></td>
-                    <td><span>1223,6222,0000</span></td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
-                        <span>比特币</span>
-                    </td>
-                    <td><span>10.0000</span></td>
-                    <td><span>6222,0000</span></td>
-                    <td><span>1,000,00</span></td>
-                    <td><span>1223,6222,0000</span></td>
-                </tr>
+            <tr>
+                <td>
+                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                    <span>比特币</span>
+                </td>
+                <td><span>10.0000</span></td>
+                <td><span>6222,0000</span></td>
+                <td><span>1,000,00</span></td>
+                <td><span>1223,6222,0000</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                    <span>比特币</span>
+                </td>
+                <td><span>10.0000</span></td>
+                <td><span>6222,0000</span></td>
+                <td><span>1,000,00</span></td>
+                <td><span>1223,6222,0000</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                    <span>比特币</span>
+                </td>
+                <td><span>10.0000</span></td>
+                <td><span>6222,0000</span></td>
+                <td><span>1,000,00</span></td>
+                <td><span>1223,6222,0000</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                    <span>比特币</span>
+                </td>
+                <td><span>10.0000</span></td>
+                <td><span>6222,0000</span></td>
+                <td><span>1,000,00</span></td>
+                <td><span>1223,6222,0000</span></td>
+            </tr>
             </tbody>
         </table>
     </div>
@@ -475,7 +509,7 @@
 </div>
 <!--登录信息 over-->
 <!--更改记录 begin-->
-<div class="pop" style="display: block;">
+<div class="pop" style="display: none;">
     <div class="pop-top">
         <div class="md-tabs">
             <a href="#">资产情况</a>
@@ -487,32 +521,32 @@
     <div class="pop-main">
         <table class="table-data mart20" width="100%">
             <thead>
-                <tr>
-                    <td width="200"><span>更改邮箱时间</span></td>
-                    <td width="100"><span>更改人</span></td>
-                    <td width="200"><span>更改前</span></td>
-                    <td width="200"><span>更改后</span></td>
-                </tr>
+            <tr>
+                <td width="200"><span>更改邮箱时间</span></td>
+                <td width="100"><span>更改人</span></td>
+                <td width="200"><span>更改前</span></td>
+                <td width="200"><span>更改后</span></td>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><span>2017-12-01 13:00:00</span></td>
-                    <td><span>高圆圆</span></td>
-                    <td><span>gaoyuanyuan@qq.com</span></td>
-                    <td><span>yuanyuangao@gmail.com</span></td>
-                </tr>
-                <tr>
-                    <td><span>2017-12-01 13:00:00</span></td>
-                    <td><span>高圆圆</span></td>
-                    <td><span>gaoyuanyuan@qq.com</span></td>
-                    <td><span>yuanyuangao@gmail.com</span></td>
-                </tr>
-                <tr>
-                    <td><span>2017-12-01 13:00:00</span></td>
-                    <td><span>高圆圆</span></td>
-                    <td><span>gaoyuanyuan@qq.com</span></td>
-                    <td><span>yuanyuangao@gmail.com</span></td>
-                </tr>
+            <tr>
+                <td><span>2017-12-01 13:00:00</span></td>
+                <td><span>高圆圆</span></td>
+                <td><span>gaoyuanyuan@qq.com</span></td>
+                <td><span>yuanyuangao@gmail.com</span></td>
+            </tr>
+            <tr>
+                <td><span>2017-12-01 13:00:00</span></td>
+                <td><span>高圆圆</span></td>
+                <td><span>gaoyuanyuan@qq.com</span></td>
+                <td><span>yuanyuangao@gmail.com</span></td>
+            </tr>
+            <tr>
+                <td><span>2017-12-01 13:00:00</span></td>
+                <td><span>高圆圆</span></td>
+                <td><span>gaoyuanyuan@qq.com</span></td>
+                <td><span>yuanyuangao@gmail.com</span></td>
+            </tr>
             </tbody>
         </table>
         <table class="table-data mart20" width="100%">
@@ -547,26 +581,26 @@
         </table>
         <table class="table-data mart20" width="100%">
             <thead>
-                <tr>
-                    <td width="200"><span>更改姓名时间</span></td>
-                    <td width="100"><span>更改人</span></td>
-                    <td width="200"><span>更改前</span></td>
-                    <td width="200"><span>更改后</span></td>
-                </tr>
+            <tr>
+                <td width="200"><span>更改姓名时间</span></td>
+                <td width="100"><span>更改人</span></td>
+                <td width="200"><span>更改前</span></td>
+                <td width="200"><span>更改后</span></td>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><span>2017-12-01 13:00:00</span></td>
-                    <td><span>高圆圆</span></td>
-                    <td><span>Gao yuan</span></td>
-                    <td><span>高圆圆</span></td>
-                </tr>
-                <tr>
-                    <td><span>2017-12-01 13:00:00</span></td>
-                    <td><span>高圆圆</span></td>
-                    <td><span>Gao yuan</span></td>
-                    <td><span>高圆圆</span></td>
-                </tr>
+            <tr>
+                <td><span>2017-12-01 13:00:00</span></td>
+                <td><span>高圆圆</span></td>
+                <td><span>Gao yuan</span></td>
+                <td><span>高圆圆</span></td>
+            </tr>
+            <tr>
+                <td><span>2017-12-01 13:00:00</span></td>
+                <td><span>高圆圆</span></td>
+                <td><span>Gao yuan</span></td>
+                <td><span>高圆圆</span></td>
+            </tr>
             </tbody>
         </table>
     </div>
