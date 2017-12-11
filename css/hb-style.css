@@ -362,7 +362,7 @@ a.color-link:hover{text-decoration: underline;}
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	padding: 10px 20px;
+	padding: 11px 20px;
 	font-size: 14px;
 	border-radius:3px;
 	box-shadow:0 2px 4px rgba(52,63,75,.16);
@@ -370,6 +370,7 @@ a.color-link:hover{text-decoration: underline;}
 	border: 0;
 	outline: 0;
 }
+.md-button-big{padding: 13px 20px;}
 .md-form-inline .md-button{position: relative;top: 2px;}
 .md-button-small{padding:5px 6px;font-size: 12px;}
 .md-button-text{background: none;border:0;color:#b1bcc8;}
@@ -485,6 +486,13 @@ a.color-link:hover{text-decoration: underline;}
 .bt-line{display:inline-block;width:35px;height: 3px;background: #4a8dee;}
 .news-ul li{display: inline-block;width: 30%;float: left;line-height: 1.6;padding-bottom:45px;}
 .news-ul li:nth-child(2){margin: 0 5%;}
+.login-info-pop{position: absolute;width:330px;height:320px;margin:-160px 0 0 -165px;left:50%;top:50%;z-index: 10;background: #fff;
+	box-shadow: 0 10px 60px rgba(0,,0,.15);border-radius:4px;overflow: hidden;display: none;}
+.login-info{padding: 30px 30px 0 30px;}
+.login-info-data{background: #fafafb;border-radius:5px;border: 1px solid #eaebed;overflow: hidden;padding:10px 0;}
+.login-info-data table{width: 100%;}
+.login-info-data table td{padding:10px 0;line-height: 24px;color: #767d85;}
+
 /*关于我们*/
 .about-txt{height:450px;margin-top: -450px;}
 .content{box-shadow:0 4px 12px rgba(52,63,75,.06);background: #fff;margin: 45px auto;padding: 35px 0;}
@@ -618,6 +626,8 @@ a.color-link:hover{text-decoration: underline;}
 	.deal-box{min-height: 340px;}
 	.message-box .font14{font-size: 14px!important;}
 	.md-dropdown li{line-height: 38px;}
+	.login-info-pop{width:420px;height: 400px;margin: -200px 0 0 -220px;}
+	.login-info-data table td{padding:20px 0;line-height: 30px;}
 }
 
 
