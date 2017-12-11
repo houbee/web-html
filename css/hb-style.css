@@ -309,8 +309,8 @@ a.color-link:hover{text-decoration: underline;}
 .md-dropdown{position: absolute;left:0;top:65px;width: 100%;background: #fff;z-index: -10;border-radius: 5px;box-shadow:0 24px 48px rgba(52,63,75,.12);transition: 0.3s;opacity: 0;}
 .md-dropdown li{line-height: 32px;padding-left: 12px;}
 .md-dropdown li:hover{background: #f6f6f9;cursor: pointer;}
-.md-select:hover .md-dropdown{z-index: 10;opacity: 1;top:43px;}
-.md-select:hover .md-selected:after{background-image: url("../img/icon-s-h.png");}
+.md-select.show-dropdown .md-dropdown{z-index: 10;opacity: 1;top:43px;}
+.md-select.show-dropdown .md-selected:after{background-image: url("../img/icon-s-h.png");}
 
 .md-form-code .md-input{width: 65%;float: left;}
 .md-form-code .md-input .md-input_inner{border-radius:4px 0 0 4px;}
@@ -626,7 +626,6 @@ a.color-link:hover{text-decoration: underline;}
 	.deal-box{min-height: 340px;}
 	.message-box .font14{font-size: 14px!important;}
 	.md-dropdown li{line-height: 38px;}
-	.login-info-pop{width:420px;height: 400px;margin: -200px 0 0 -220px;}
 	.login-info-data table td{padding:20px 0;line-height: 30px;}
 }
 
