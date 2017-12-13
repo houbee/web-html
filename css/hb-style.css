@@ -345,7 +345,7 @@ a.color-link:hover{text-decoration: underline;}
 .md-input_inner span,.unit{display: inline-block;line-height:38px;}
 .unit{position: absolute;top:0;right:10px;bottom:0;}
 /*搜索*/
-.search-box{width:300px;height: 32px;line-height: 30px;background: #fafafb;border-radius:4px;margin-right:20px;position: relative;}
+.search-box{width:300px;height: 32px;line-height: 30px;background: #fafafb;border-radius:4px;position: relative;}
 .ser-input_inner{width:100%;height: 30px;line-height: 30px;padding:0;border:1px solid #eaebed;outline: 0;border-radius:4px;background: #fafafb;text-indent: 10px;}
 .search-btn{display:inline-block;border: 0;border-radius:5px;outline: 0;width:40px;background:none;cursor: pointer;position: absolute;top:0;right:0;bottom:0;z-index: 2;}
 .ser-input_inner:hover{border-color: #aec7ec;box-shadow: 0 0 18px rgba(75,140,238,.38)}

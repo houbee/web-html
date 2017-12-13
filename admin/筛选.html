@@ -57,11 +57,11 @@
 <div class="right">
     <div class="md-tabs">
         <span class="font14 mart20 inline-block color-black strong">每日对账</span>
-        <div class="search-box input-search pull-right mart10">
+        <div class="search-box input-search pull-right mart10  marr20">
             <input class="ser-input_inner pull-left" placeholder="Search">
             <button class="search-btn"></button>
         </div>
-        <div class="search-box search-group input-search pull-right mart10">
+        <div class="search-box search-group input-search pull-right mart10 marr20">
             <div class="search-group-select show-dropdown" style="width: 30%;">
                 <p class="search-group-selected">
                     <span>选择币种</span>
@@ -83,7 +83,7 @@
                 <label class="md-form-item_label">选择币种</label>
                 <div class="md-form-item_content" style="width: 160px;">
                     <div class="md-input">
-                        <div class="md-select show-dropdown">
+                        <div class="md-select ">
                             <p class="md-selected">
                                 <span class="icon-coin"><img src="../img/icon-coin.png"></span>
                                 <span>选择币种</span>
@@ -148,22 +148,39 @@
         <span class="md-button md-button-toggle pull-right mart30 marr20 color-link"><span>收起筛选</span></span>
     </div>
     <div class="data-box">
-        <div class="select-item mart10">
-            <div class="clearfix">
-                <span class="width-90 pull-left">交易类型:</span>
-                <dl>
-                    <dd><span class="color-link">全部</span></dd>
-                    <dd><span>主动买入</span></dd>
-                    <dd><span>主动卖出</span></dd>
-                </dl>
+        <div class="clearfix mart10">
+            <div class="select-item pull-left" style="width: 60%;">
+                <div class="clearfix">
+                    <span class="width-90 pull-left">交易类型:</span>
+                    <dl>
+                        <dd><span class="color-link">全部</span></dd>
+                        <dd><span>主动买入</span></dd>
+                        <dd><span>主动卖出</span></dd>
+                    </dl>
+                </div>
+                <div class="clearfix mart20">
+                    <span class="width-90 pull-left">交易方:</span>
+                    <dl>
+                        <dd><span>全部</span></dd>
+                        <dd><span class="color-link">买方</span></dd>
+                        <dd><span>卖方</span></dd>
+                    </dl>
+                </div>
             </div>
-            <div class="clearfix mart20">
-                <span class="width-90 pull-left">交易方:</span>
-                <dl>
-                    <dd><span>全部</span></dd>
-                    <dd><span class="color-link">买方</span></dd>
-                    <dd><span>卖方</span></dd>
-                </dl>
+            <div class="search-box search-group input-search pull-right">
+                <div class="search-group-select show-dropdown" style="width: 30%;">
+                    <p class="search-group-selected">
+                        <span>选择币种</span>
+                    </p>
+                    <ul class="md-dropdown">
+                        <li><span>比特币</span></li>
+                        <li class="checked"><span>比特币</span></li>
+                        <li><span>比特币</span></li>
+                        <li><span>比特币</span></li>
+                    </ul>
+                </div>
+                <input class="ser-input_inner pull-left" style="text-indent: 35%;" placeholder="Search2">
+                <button class="search-btn"></button>
             </div>
         </div>
         <table class="table-data mart30" width="100%">
