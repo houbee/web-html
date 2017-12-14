@@ -454,7 +454,7 @@ a.color-link:hover{text-decoration: underline;}
 
 
 .reg-main{margin:80px auto;min-height: 200px;}
-.reg-box{width: 320px;margin: 0 auto;padding:40px;background: #fff;box-shadow:0 3px 12px rgba(52,63,75,.06);border-radius:4px;}
+.reg-box{width: 320px;margin: 0 auto;padding:30px 40px 30px 40px;background: #fff;box-shadow:0 3px 12px rgba(52,63,75,.06);border-radius:4px;}
 .read-end{vertical-align: 0;margin-right:5px;}
 .icon-success img{width: 40px;}
 .sfz-success{display: inline-block;vertical-align: middle;margin-right:5px;}
