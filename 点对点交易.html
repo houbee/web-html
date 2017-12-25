@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
-    <title>指数交易</title>
+    <title>点对点交易</title>
     <link href="css/hb-style.css" rel="stylesheet">
     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
     <script type="text/javascript">
@@ -84,6 +84,15 @@
         <div class="container clearfix">
             <!--left begin-->
             <div class="center-left pull-left">
+                <div class="clearfix">
+                    <span class="pull-left font14">点对点交易</span>
+                    <div class="relative" style="margin-left: 80px;">
+                        <i class="icon icon-info"></i>
+                        <div class="message-pop" style="width:400px;margin-top: -45px;">
+                            <p>点对点交易区定位于购买比特币有提现需求的用户。用户可以自己决定买入或卖出价格，用户和商家之间自由选择成交。</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="nav-item mart10">
                     <a href="#" class="check">BTC</a>
                     <a href="#">LTC</a>
@@ -98,121 +107,194 @@
                 <div class="right-inner2 pull-right">
                     <!--买卖begin-->
                     <div class="clearfix">
-                        <div class="deal-box pull-left">
+                        <div class="deal-box deal-box2 pull-left" style="width: 30%;">
                             <div class="deal-inner">
-                                <p class="font14 color-high strong">买入BTC</p>
-                                <form class="md-form md-form-label-in mart30">
-                                    <div class="md-form-item disable">
-                                        <label class="md-form-item_label">买入价格</label>
-                                        <div class="md-form-item_content">
-                                            <div class="md-input">
-                                                <div class="md-input_inner color-up">
-                                                    <span>102,185.67</span>
-                                                    <span>CYN</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="clearfix">
+                                    <div class="md-select md-select-normal pull-right width-60">
+                                        <p class="md-selected">CYN</p>
+                                        <ul class="md-dropdown">
+                                            <li>BTC</li>
+                                            <li>BTC</li>
+                                            <li>BTC</li>
+                                        </ul>
                                     </div>
-                                    <div class="md-form-item">
-                                        <label class="md-form-item_label">买入数量</label>
-                                        <div class="md-form-item_content">
-                                            <div class="md-input">
-                                                <input class="md-input_inner" value="29474">
-                                                <span class="unit color-no">BTC</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md-form-item">
-                                        <label class="md-form-item_label">买入金额</label>
-                                        <div class="md-form-item_content">
-                                            <div class="md-input">
-                                                <input class="md-input_inner" value="20,0394.30">
-                                                <span class="unit color-no">CYN</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md-form-item">
-                                        <div class="md-form-item_content">
-                                            <button type="button" class="md-button md-button-buy md-button-block mart20 disable"><span>快速买入</span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <p class="color-no mart10">默认支持银行汇款、支付宝、微信支付、Paypal支付</p>
-                            </div>
-                        </div>
-                        <div class="deal-box pull-left" style="width: 25%;margin-left: 2.5%;">
-                            <div class="deal-inner">
-                                <div class="md-select md-select-normal width-110">
-                                    <p class="md-selected">BTC/CYN</p>
-                                    <ul class="md-dropdown">
-                                        <li>BTC/CYN</li>
-                                        <li>BTC/CYN</li>
-                                        <li>BTC/CYN</li>
-                                    </ul>
                                 </div>
                                 <div class="text-right mart15 clearfix">
-                                    <span class="pull-left font18 color-down"><em>99,616.17</em><em>CNY</em></span>
+                                    <span class="pull-left font18 color-down"><em>99,616.17</em><em class="marl5">CNY</em></span>
                                     <div class="inline-block mart5">
                                         <span class="color-up">+1.75%</span>
                                         <i class="icon icon-up"></i>
                                     </div>
                                 </div>
                                 <div class="text-right mart15 clearfix">
-                                    <span class="pull-left">今日最高</span>
+                                    <span class="pull-left">24H最高</span>
                                     <div class="inline-block color-high ">
                                         <span>97,098.80</span>
                                         <span>CNY</span>
                                     </div>
                                 </div>
                                 <div class="text-right mart10 clearfix">
-                                    <span class="pull-left">今日最低</span>
+                                    <span class="pull-left">24H最低</span>
                                     <div class="inline-block color-high ">
                                         <span>97,098.80</span>
                                         <span>CNY</span>
                                     </div>
                                 </div>
+                                <canvas id="myCanvas" class="mart15 canvas-big" style="width:100%;border: 1px solid #000;">
+                                    Your browser does not support the HTML5 canvas tag.
+                                </canvas>
                             </div>
                         </div>
-                        <div class="deal-box pull-right">
+                        <div class="deal-box deal-box2 pull-right" style="width: 68%;">
                             <div class="deal-inner">
-                                <p class="font14 color-high strong">卖出BTC</p>
-                                <form class="md-form md-form-label-in mart30">
-                                    <div class="md-form-item disable">
-                                        <label class="md-form-item_label">卖出价格</label>
-                                        <div class="md-form-item_content">
-                                            <div class="md-input">
-                                                <div class="md-input_inner color-down">
-                                                    <span>102,185.67</span>
-                                                    <span>CYN</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md-form-item">
-                                        <label class="md-form-item_label">卖出数量</label>
-                                        <div class="md-form-item_content">
-                                            <div class="md-input">
-                                                <input class="md-input_inner" value="29474">
-                                                <span class="unit color-no">BTC</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md-form-item">
-                                        <label class="md-form-item_label">卖出金额</label>
-                                        <div class="md-form-item_content">
-                                            <div class="md-input">
-                                                <input class="md-input_inner" value="20,0394.30">
-                                                <span class="unit color-no">CYN</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md-form-item">
-                                        <div class="md-form-item_content">
-                                            <button type="button" class="md-button md-button-sale md-button-block mart20"><span>快速卖出</span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <p class="color-no mart10">默认支持银行汇款、支付宝、微信支付、Paypal支付</p>
+                                <div class="font14 clearfix">
+                                    <span class="color-high">交易单</span>
+                                    <span class="marl10">
+                                        <i class="icon icon-hot"></i>
+                                        <em class="color-hot font12">限时，0手续费快来交易吧</em>
+                                    </span>
+                                    <span class="font12 pull-right mart10"><em>价格不合适？试试</em><a href="#" class="color-link marl5">发布交易单</a></span>
+                                </div>
+                            </div>
+                            <ul class="data-header clearfix">
+                                <li>价格CYN</li>
+                                <li>数量BTC</li>
+                                <li>金额</li>
+                                <li>委托人</li>
+                                <li>单数</li>
+                                <li>完成率</li>
+                                <li></li>
+                            </ul>
+                            <div class="data-scroll">
+                                <ul class="data-list clearfix">
+                                    <li class="color-up">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online cur">Haaahs</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-buy"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-up">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online cur">Haaahs</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-buy"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-up">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Haaahs</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-buy"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-up">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-buy"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-up">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online cur">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-buy"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-up">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online cur">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-buy"><span>买入</span></button></li>
+                                </ul>
+                            </div>
+                            <p class="line"></p>
+                            <div class="data-scroll">
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
+                                <ul class="data-list clearfix">
+                                    <li class="color-down">115,999.00</li>
+                                    <li>0.0268</li>
+                                    <li>3,108.77</li>
+                                    <li><span class="online">Liudehua</span></li>
+                                    <li>123</li>
+                                    <li>98.55%</li>
+                                    <li><button type="button" class="md-button md-button-small md-button-sale"><span>买入</span></button></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -232,54 +314,54 @@
                                     <li>
                                         <table class="order-table waiting-order">
                                             <thead>
-                                                <tr>
-                                                    <th colspan="2" width="30%"><span>订单号：</span><span class="color-high">171031224724374</span></th>
-                                                    <th width="39%"><span>买家：</span><span>liudehuan</span></th>
-                                                    <th width="31%" class="text-right">
-                                                        <a href="#" class="color-link marr20"><i class="icon icon-msg"></i><span>联系客服</span></a>
-                                                    </th>
-                                                </tr>
+                                            <tr>
+                                                <th colspan="2" width="30%"><span>订单号：</span><span class="color-high">171031224724374</span></th>
+                                                <th width="39%"><span>买家：</span><span>liudehuan</span></th>
+                                                <th width="31%" class="text-right">
+                                                    <a href="#" class="color-link marr20"><i class="icon icon-msg"></i><span>联系客服</span></a>
+                                                </th>
+                                            </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td width="5%">
-                                                        <p class="font14">卖出</p>
-                                                        <p class="font20 strong mart5">BTC</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="font16 color-high"><span>¥</span><span>417.36</span></p>
-                                                        <p class="mart10"><span>价格：</span><span>41735.51</span></p>
-                                                        <p class="mart5"><span>数量：</span><span>0.01000000</span></p>
-                                                    </td>
-                                                    <td>
-                                                        <p>规定时间内对方未支付，订单将取消</p>
-                                                    </td>
-                                                    <td>
-                                                        <div class="td-div-in clearfix">
-                                                            <div class="pull-left">
-                                                                <p class="color-high strong">等待对方支付</p>
-                                                            </div>
-                                                            <div class="pull-left">
-                                                                <p class="first-p"><i class="icon icon-clock"></i><span>还剩9分钟24秒</span></p>
-                                                            </div>
+                                            <tr>
+                                                <td width="5%">
+                                                    <p class="font14">卖出</p>
+                                                    <p class="font20 strong mart5">BTC</p>
+                                                </td>
+                                                <td>
+                                                    <p class="font16 color-high"><span>¥</span><span>417.36</span></p>
+                                                    <p class="mart10"><span>价格：</span><span>41735.51</span></p>
+                                                    <p class="mart5"><span>数量：</span><span>0.01000000</span></p>
+                                                </td>
+                                                <td>
+                                                    <p>规定时间内对方未支付，订单将取消</p>
+                                                </td>
+                                                <td>
+                                                    <div class="td-div-in clearfix">
+                                                        <div class="pull-left">
+                                                            <p class="color-high strong">等待对方支付</p>
                                                         </div>
+                                                        <div class="pull-left">
+                                                            <p class="first-p"><i class="icon icon-clock"></i><span>还剩9分钟24秒</span></p>
+                                                        </div>
+                                                    </div>
 
-                                                    </td>
-                                                </tr>
+                                                </td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </li>
                                     <li>
                                         <table class="order-table waiting-order">
                                             <thead>
-                                                <tr>
-                                                    <th colspan="2" width="30%"><span>订单号：</span><span class="color-high">171031224724374</span></th>
-                                                    <th width="39%"><span>买家：</span><span>liudehuan</span></th>
-                                                    <th width="31%" class="text-right">
-                                                        <span class="marr20">没有收到款项？<a href="#" class="color-link">申请客诉</a></span>
-                                                        <a href="#" class="color-link marr20"><i class="icon icon-msg"></i><span>联系客服</span></a>
-                                                    </th>
-                                                </tr>
+                                            <tr>
+                                                <th colspan="2" width="30%"><span>订单号：</span><span class="color-high">171031224724374</span></th>
+                                                <th width="39%"><span>买家：</span><span>liudehuan</span></th>
+                                                <th width="31%" class="text-right">
+                                                    <span class="marr20">没有收到款项？<a href="#" class="color-link">申请客诉</a></span>
+                                                    <a href="#" class="color-link marr20"><i class="icon icon-msg"></i><span>联系客服</span></a>
+                                                </th>
+                                            </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
@@ -399,68 +481,68 @@
                             <div class="md-tab-pane" style="display: none;" title="已完成订单">
                                 <table class="table-data-normal" width="100%">
                                     <thead>
-                                        <tr>
-                                            <td width=""><span>订单号</span></td>
-                                            <td width=""><span>类型</span></td>
-                                            <td width=""><span>状态</span></td>
-                                            <td width=""><span>币种对</span></td>
-                                            <td width=""><span>价格</span></td>
-                                            <td width=""><span>数量</span></td>
-                                            <td width=""><span>金额</span></td>
-                                            <td width=""><span>下单时间</span></td>
-                                        </tr>
+                                    <tr>
+                                        <td width=""><span>订单号</span></td>
+                                        <td width=""><span>类型</span></td>
+                                        <td width=""><span>状态</span></td>
+                                        <td width=""><span>币种对</span></td>
+                                        <td width=""><span>价格</span></td>
+                                        <td width=""><span>数量</span></td>
+                                        <td width=""><span>金额</span></td>
+                                        <td width=""><span>下单时间</span></td>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><span>1823374530230</span></td>
-                                            <td><span class="color-up">买入</span></td>
-                                            <td><span>交易完成</span></td>
-                                            <td><span>BTC/CYN</span></td>
-                                            <td><span>239485.2 CYN</span></td>
-                                            <td><span>239485.2 BTC</span></td>
-                                            <td><span>485.2 CYN</span></td>
-                                            <td><span>2017-12-01 13:00:00</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>1823374530230</span></td>
-                                            <td><span class="color-up">买入</span></td>
-                                            <td><span>交易完成</span></td>
-                                            <td><span>BTC/CYN</span></td>
-                                            <td><span>239485.2 CYN</span></td>
-                                            <td><span>239485.2 BTC</span></td>
-                                            <td><span>485.2 CYN</span></td>
-                                            <td><span>2017-12-01 13:00:00</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>1823374530230</span></td>
-                                            <td><span class="color-up">买入</span></td>
-                                            <td><span>交易完成</span></td>
-                                            <td><span>BTC/CYN</span></td>
-                                            <td><span>239485.2 CYN</span></td>
-                                            <td><span>239485.2 BTC</span></td>
-                                            <td><span>485.2 CYN</span></td>
-                                            <td><span>2017-12-01 13:00:00</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>1823374530230</span></td>
-                                            <td><span class="color-down">卖出</span></td>
-                                            <td><span>交易完成</span></td>
-                                            <td><span>BTC/CYN</span></td>
-                                            <td><span>239485.2 CYN</span></td>
-                                            <td><span>239485.2 BTC</span></td>
-                                            <td><span>485.2 CYN</span></td>
-                                            <td><span>2017-12-01 13:00:00</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>1823374530230</span></td>
-                                            <td><span class="color-down">卖出</span></td>
-                                            <td><span>交易完成</span></td>
-                                            <td><span>BTC/CYN</span></td>
-                                            <td><span>239485.2 CYN</span></td>
-                                            <td><span>239485.2 BTC</span></td>
-                                            <td><span>485.2 CYN</span></td>
-                                            <td><span>2017-12-01 13:00:00</span></td>
-                                        </tr>
+                                    <tr>
+                                        <td><span>1823374530230</span></td>
+                                        <td><span class="color-up">买入</span></td>
+                                        <td><span>交易完成</span></td>
+                                        <td><span>BTC/CYN</span></td>
+                                        <td><span>239485.2 CYN</span></td>
+                                        <td><span>239485.2 BTC</span></td>
+                                        <td><span>485.2 CYN</span></td>
+                                        <td><span>2017-12-01 13:00:00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1823374530230</span></td>
+                                        <td><span class="color-up">买入</span></td>
+                                        <td><span>交易完成</span></td>
+                                        <td><span>BTC/CYN</span></td>
+                                        <td><span>239485.2 CYN</span></td>
+                                        <td><span>239485.2 BTC</span></td>
+                                        <td><span>485.2 CYN</span></td>
+                                        <td><span>2017-12-01 13:00:00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1823374530230</span></td>
+                                        <td><span class="color-up">买入</span></td>
+                                        <td><span>交易完成</span></td>
+                                        <td><span>BTC/CYN</span></td>
+                                        <td><span>239485.2 CYN</span></td>
+                                        <td><span>239485.2 BTC</span></td>
+                                        <td><span>485.2 CYN</span></td>
+                                        <td><span>2017-12-01 13:00:00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1823374530230</span></td>
+                                        <td><span class="color-down">卖出</span></td>
+                                        <td><span>交易完成</span></td>
+                                        <td><span>BTC/CYN</span></td>
+                                        <td><span>239485.2 CYN</span></td>
+                                        <td><span>239485.2 BTC</span></td>
+                                        <td><span>485.2 CYN</span></td>
+                                        <td><span>2017-12-01 13:00:00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1823374530230</span></td>
+                                        <td><span class="color-down">卖出</span></td>
+                                        <td><span>交易完成</span></td>
+                                        <td><span>BTC/CYN</span></td>
+                                        <td><span>239485.2 CYN</span></td>
+                                        <td><span>239485.2 BTC</span></td>
+                                        <td><span>485.2 CYN</span></td>
+                                        <td><span>2017-12-01 13:00:00</span></td>
+                                    </tr>
                                     </tbody>
                                 </table>
                                 <div class="md-pagination mart30">
@@ -518,39 +600,6 @@
         </div>
     </div>
     <!--footer over-->
-    <!--申诉弹出begin-->
-    <div class="mask" style="display: ;"></div>
-    <div class="pop" style="display: block;width: 360px;height:200px;margin:-100px 0 0 -180px;">
-        <div class="pop-top">
-            <span class="icon-off-grey"></span>
-            <p class="pop-title font14"><i class="icon icon-waring marr10"></i><span>申请客诉确认</span></p>
-        </div>
-        <div class="pop-main-white pop-has-bottom">
-            <p class="font13 pop-msg color-no">您确认没有收到款项要申请客诉？申请客诉后订单将会冻结，客服将会联系交易双方处理订单。</p>
-        </div>
-        <div class="pop-bottom text-right">
-            <a class="md-button"><span>取消</span></a>
-            <a class="md-button md-button-primary marl10"><span>确认申请</span></a>
-        </div>
-    </div>
-    <!--申诉弹出over-->
-    <!--提示信息begin-->
-    <div class="message-box error-message clearfix " title="显示加show-message">
-        <span class="icon-message pull-left"><img src="img/icon-waring.png"></span>
-        <span class="font14">用户余额不足</span>
-        <a href="javascript:;" class="icon icon-off"></a>
-    </div>
-    <div class="message-box success-message clearfix">
-        <span class="icon-message pull-left"><img src="img/icon-success2.png"></span>
-        <span class="font14">卖出成功</span>
-        <a href="javascript:;" class="icon icon-off"></a>
-    </div>
-    <div class="message-box error-message clearfix">
-        <span class="icon-message pull-left"><img src="img/icon-refresh.png"></span>
-        <span class="font14">超时，请重新尝试</span>
-        <a href="javascript:;" class="icon icon-off"></a>
-    </div>
-    <!--提示信息over-->
 </div>
 </body>
 </html>
