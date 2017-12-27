@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
+    <title>行情图表</title>
+    <link href="css/hb-style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load("body", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//全局默认字体
+        $youziku.load(".PingFangSC_L", "4997c0be14e24128a91eba4ff7d3df99", "PingFangSC_L");//苹方纤黑
+        $youziku.load(".PingFangSC_R", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//苹方细黑
+        $youziku.load(".PingFangSC", "d31e2c91332b470090369540755c109f", "PingFangSC");//苹方黑体
+        $youziku.draw();
+    </script>
+</head>
+<body>
+<div class="body-bg">
+    <!--header begin-->
+    <div class="header">
+        <div class="header-top container-fluid">
+            <div class="container clearfix">
+                <div class="select-group pull-left">
+                    <span class="color-white">市场概况</span>
+                </div>
+                <div class="pull-left marl40">
+                    <span>BCC/BTC:</span>
+                    <span class="color-up">฿ 0.17918663</span>
+                    <i class="icon icon-up"></i>
+                </div>
+                <div class="pull-left marl20">
+                    <span>LTC/BTC:</span>
+                    <span class="color-up">฿ 0.17918663</span>
+                    <i class="icon icon-up"></i>
+                </div>
+                <div class="pull-left marl20">
+                    <span>季度BTC1299:</span>
+                    <span class="color-down">￥ 0.17918663</span>
+                    <i class="icon icon-down"></i>
+                </div>
+                <div class="pull-left marl20">
+                    <span>季度LTC1299:</span>
+                    <span class="color-down">￥ 0.17918663</span>
+                    <i class="icon icon-down"></i>
+                </div>
+                <div class="pull-right">
+                    <a href="#" class="md-button md-button-small md-button-text">欢迎回来，18688886666</a>
+                    <a href="#" class="md-button md-button-small md-button-primary marl20">退出</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main container relative clearfix">
+            <a href="#" class="logo-normal"></a>
+            <ul class="header-nav pull-right font16 clearfix PingFangSC">
+                <li><a href="#">首页</a></li>
+                <li><a href="#" class="current">C2C交易</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">行情图表</a></li>
+                <li><a href="#">资金管理</a></li>
+                <li><a href="#">后台管理</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--header over-->
+    <div class="container-fluid tab-box">
+        <div class="container clearfix text-right">
+            <div class="md-tabs pull-left">
+                <a href="#" class="active">币币行情</a>
+                <a href="#">合约行情</a>
+                <a href="#">价格指标</a>
+            </div>
+            <div class="inline-block">
+                <span>
+                    <span class="color-no">可用</span>
+                    <span class="marl5">BTC</span>
+                    <span>12.2222</span>
+                </span>
+                <span>
+                    <span class="color-no marl10">XRP</span>
+                    <span class="marl5">12.2297622</span>
+                </span>
+                <span>
+                    <span class="color-no marl10">冻结</span>
+                    <span class="marl5">BTC</span>
+                    <span>12.2222</span>
+                </span>
+                <span>
+                    <span class="color-no marl10">XRP</span>
+                    <span class="marl5">12.22223452</span>
+                </span>
+            </div>
+            <a href="#" class="md-button marl20"><span class="color-link">充值</span></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container mart20">
+            <div class="hq-top clearfix">
+                <div class="pull-left">
+                    <span class="font13 color-light">选择币种</span>
+                    <div class="md-select md-select-normal width-110 inline-block marl10">
+                        <p class="md-selected">BTC/CYN</p>
+                        <ul class="md-dropdown">
+                            <li>BTC/CYN</li>
+                            <li>BTC/CYN</li>
+                            <li>BTC/CYN</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pull-right text-right">
+                    <div class="pull-left">
+                        <p><span>0.00007602</span><span class="marl5">BTC</span></p>
+                        <p class="color-light mart10">今日最高</p>
+                    </div>
+                    <div class="pull-left">
+                        <p><span>0.00007602</span><span class="marl5">BTC</span></p>
+                        <p class="color-light mart10">今日最低</p>
+                    </div>
+                    <div class="pull-left">
+                        <p><span>0.00007602</span><span class="marl5">XRP</span></p>
+                        <p class="color-light mart10">24小时成交量</p>
+                    </div>
+                    <div class="pull-left">
+                        <p><span class="color-up">+9.71%</span></p>
+                        <p class="color-light mart10">涨跌幅</p>
+                    </div>
+                    <div class="pull-left">
+                        <p><span class="color-up">0.00007602</span><span class="marl5 color-up">BTC</span><i class="icon icon-up marl5"></i></p>
+                        <p class="color-light mart10">今日最低</p>
+                    </div>
+                </div>
+            </div>
+            <!--行情图 begin-->
+            <div class="mart20" style="height: 400px;">
+                这里是行情走势图
+            </div>
+            <!--行情图 over-->
+        </div>
+    </div>
+    <!--footer begin-->
+    <div class="footer container-fluid">
+        <div class="container">
+            <div class="clearfix">
+                <ul class="footer-nav pull-left">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">服务条款</a></li>
+                    <li><a href="#">隐私保护</a></li>
+                </ul>
+                <a href="#" class="footer-logo pull-right"></a>
+            </div>
+            <div class="clearfix mart40">
+                <span class="pull-left">联系电话：+86 8888 6666 （24小时服务热线）</span>
+                <span class="pull-right">©2013-2017 OKEX.com. All Rights Reserved</span>
+            </div>
+            <div class="clearfix mart20">
+                <span class="pull-left">公司地址：美国华盛顿中央广场</span>
+                <span class="pull-right"></span>
+            </div>
+            <div class="clearfix mart20">
+                <span class="pull-left">通讯地址：北京，长安街，中南海内</span>
+                <span class="pull-right">市场有风险 投资需谨慎</span>
+            </div>
+        </div>
+    </div>
+    <!--footer over-->
+</div>
+</body>
+</html>

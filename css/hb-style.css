@@ -210,7 +210,7 @@ a.color-link:hover{text-decoration: underline;}
 .icon-mail{background-image: url("../img/icon-mail.png");}
 .icon-ser{width: 30px;height:30px;background-image: url("../img/icon-search.png");background-size:50%;}
 .icon-off{width:26px;height: 26px;position: absolute;top:50%;margin-top: -13px;right:10px;background-position:center;background-image: url("../img/icon-off.png");background-size:70%;background-repeat:no-repeat;z-index: 9999;cursor: pointer;}
-.icon-off-grey{width:26px;height: 26px;position: absolute;top:50%;margin-top: -13px;right:10px;background-position:center;background-image: url("../img/icon-off-grey.png");
+.icon-off-grey{width:26px;height: 26px;position: absolute;top:15px;right:10px;background-position:center;background-image: url("../img/icon-off-grey.png");
 	background-size:70%;background-repeat:no-repeat;z-index: 9;cursor: pointer;}
 .icon-code{width: 38px;height:38px;background-image: url("../img/icon-code.png");background-size: 60%;position: absolute;top:0;right: -45px;cursor: pointer;}
 .icon-code img{width: 100px;display: none;position: absolute;left:100%;box-shadow:0 24px 48px rgba(52,63,75,.12);}
@@ -219,13 +219,16 @@ a.color-link:hover{text-decoration: underline;}
 .icon-msg{width:24px;height:24px;background-image: url("../img/icon-msg.png");background-size: 60%;vertical-align: -7px;}
 .icon-clock{width:20px;height:20px;background-image: url("../img/icon-clock.png");background-size: 70%;vertical-align: -6px;}
 .icon-hot{width:24px;height:24px;background-image: url("../img/icon-hot.png");background-size: 60%;vertical-align: -6px;}
+.icon-arrow-left{width:13px;height:24px;background-image: url("../img/icon-arrow-l.png");background-size:60%;vertical-align: -7px;background-position: 0 center;}
 /*header and footer*/
+.header{background: #fff;}
 .header-reg{background: #fff;box-shadow:0 4px 12px rgba(52,63,75,.06);}
 .header-reg .container{height:80px;}
 .reg-nav li{display: inline-block;}
 .reg-nav li a{display: inline-block;color: #767d85;line-height:80px;margin: 0 20px;position: relative;}
 .reg-nav li a.active{color:#4b8cee;}
 .reg-nav li a.active:after{content: '';border-bottom:3px solid #4b8cee;position: absolute;bottom:0;left:5px;right: 5px;}
+.logo-r{display:inline-block;margin:25px 0 0 170px;line-height:35px;font-size: 13px;padding-left:20px;color: #767d85;border-left: 2px solid #eeeff0;}
 .logo{
 	/* 普通显示屏(设备像素比例小于等于1.3)使用1倍的图 */
 	width: 147px;
@@ -292,6 +295,7 @@ a.color-link:hover{text-decoration: underline;}
 .md-form-item{margin-bottom:15px;}
 .md-form-update .md-form-item{margin-bottom:20px;}
 .md-form-item:last-child{margin-bottom:0;}
+.form-item-inline .md-form-item{display: inline-block;}
 .md-form-item_label{display: inline-block;line-height:20px;color: #767d85;margin-bottom:5px;}
 .md-form-item_label + .relative{top:3px;}
 .md-input{position: relative;}
@@ -387,12 +391,15 @@ a.color-link:hover{text-decoration: underline;}
 .md-form-label-in .md-input_inner2{padding-left: 35%;}
 .md-input_inner span,.unit,.md-input_inner2 span{display: inline-block;line-height:38px;}
 .unit{position: absolute;top:0;right:10px;bottom:0;}
+.form-message-alert{width:160px;text-align:center;background: #fff;border-radius:5px;box-shadow: 0 0 18px rgba(52,63,75 ,.16);color:#8d979e;font-size:13px;position: absolute;z-index: 11;line-height: 40px;top:50%;left:50%;margin: -20px 0 0 -80px;}
+
+
 /*搜索*/
 .search-box{width:300px;height: 32px;line-height: 30px;background: #fafafb;border-radius:4px;position: relative;}
 .ser-input_inner{width:100%;height: 30px;line-height: 30px;padding:0;border:1px solid #eaebed;outline: 0;border-radius:4px;background: #fafafb;text-indent: 10px;}
 .search-btn{display:inline-block;border: 0;border-radius:5px;outline: 0;width:40px;background:none;cursor: pointer;position: absolute;top:0;right:0;bottom:0;z-index: 2;}
-.ser-input_inner:hover{border-color: #aec7ec;box-shadow: 0 0 18px rgba(75,140,238,.38)}
-.ser-input_inner:focus{border-color: #4b8cee;box-shadow: 0 0 18px rgba(75,140,238,.38)}
+.ser-input_inner:hover{border-color: #aec7ec;box-shadow: 0 0 18px rgba(75,140,238,.38);}
+.ser-input_inner:focus{border-color: #4b8cee;box-shadow: 0 0 18px rgba(75,140,238,.38);}
 .input-search:after{
 	content: '';width:16px;height:16px;display:inline-block;background: url("../img/icon-search.png") no-repeat center;
 	background-size:100%;position:absolute;top:50%;margin-top: -8px;right:10px;
@@ -450,6 +457,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 	background-color: #ca413e;
 	border-color: #ca413e;
 }
+.md-button-quit{color: #767d85;}
 .select-group{cursor: pointer;position: relative;}
 .select-group:after{content: "";position: absolute;border-right:5px solid transparent;border-left:5px solid transparent;border-top:5px solid #fff;top:43%;right:-40%;}
 .md-button-toggle{padding-right:30px;}
@@ -490,7 +498,8 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .md-btn-prev,.md-btn-next{border:0;outline:0;width:32px;height: 32px;background: url("../img/icon-page.png") no-repeat center;background-size: auto 50%;cursor: pointer;}
 .md-btn-next{transform: rotate(-180deg);}
 .page-btn{display:inline-block;vertical-align:top;height: 30px;line-height: 30px;padding:0 20px;border:1px solid #dbdee6;background: #fff;border-radius:5px;color: #858e99;}
-.mask{position: fixed; width:100%;left:0;top:0;bottom:0;background: rgba(42,53,65,.6);z-index: 10;}
+.mask{position: fixed; width:100%;left:0;top:0;bottom:0;background: rgba(42,53,65,.6);z-index: 10;display: none;}
+.mask-in{position: absolute; width:100%;left:0;top:0;bottom:0;background: rgba(0,0,0,0);z-index: 10;display: none;}
 .pop{position: absolute;width: 820px;height:580px;left:50%;top:50%;margin: -290px 0 0 -410px;z-index: 10;background: #fff;
 	box-shadow: 0 18px 24px rgba(42,63,65,.12);border-radius:4px;display: none;}
 .pop-main{position: absolute;top:51px;left:0;right:0;bottom:0;padding:15px;background: #fafafb;overflow:hidden;overflow-y: auto;}
@@ -568,6 +577,12 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .about-txt{height:450px;margin-top: -450px;}
 .content{box-shadow:0 4px 12px rgba(52,63,75,.06);background: #fff;margin: 45px auto;padding: 35px 0;}
 .content p{padding:0 80px;}
+.news-content{box-shadow:0 4px 12px rgba(52,63,75,.06);background: #fff;margin: 45px auto;padding:10px 30px;}
+.news-title{line-height: 30px;}
+.news-txt{color: #767d85;font-size: 13px;line-height:16px;}
+.news-content li{border-bottom:1px solid #eeeff0;padding-bottom:15px;margin-bottom:20px;}
+.deail-main p{margin-bottom: 10px;}
+
 .info-box{width: 420px;height:320px;background: rgba(255,255,255,.9);}
 .info-box p{padding:0 20px 0 60px;}
 .our-link li{display: inline-block;float: left;width: 25%;text-align: center;padding:180px 0;position: relative;}
@@ -580,9 +595,9 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .deal-inner{padding:20px;}
 .right-narmal-box{background: #fff;border-radius:5px;box-shadow:0 2px 6px rgba(52,63,75,.08);}
 .account-info{background: #fafbfd;border:1px solid #e3e7ed;border-radius:4px;padding:15px 10px;}
-.account-info .pull-left{padding-right: 60px;}
+.account-info .pull-left{width: 33.3%;text-indent: 5px;}
 .account-info .pull-left p{line-height: 24px;}
-.tab-box{border-top:1px solid #eeeff0;line-height: 50px;}
+.tab-box{border-top:1px solid #eeeff0;line-height: 50px;background: #fff;}
 .tab-box .md-tabs{border-bottom: 0;padding-left: 0;}
 .unfinished-order li{margin:0 10px 10px 10px;box-shadow: 0 2px 6px rgba(52,63,75,.08);border-radius:3px;overflow: hidden;}
 .order-table{width: 100%;}
@@ -611,6 +626,8 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .online.cur:before{background: #51bd68;}
 .data-list li .md-button-small{padding:5px 14px;}
 .canvas-big{height:240px;}
+.hq-top{padding:14px 20px;background: #fff;border-radius：5px;box-shadow: 0 2px 6px rgba(52,63,75,.08);}
+.hq-top .pull-right .pull-left{padding-left:50px;}
 
 /*admin*/
 .menu-item p{line-height:50px;font-size: 14px;padding-left: 30px;position: relative;cursor: pointer;}
@@ -852,6 +869,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 		background-size: auto 100%;
 
 	}
+	.logo-r{margin:34px 0 0 200px;font-size: 14px;}
 	.banner-ul{height:540px;position: relative;}
 	.banner-ul li{background-size: auto 540px;}
 	.info-box{width: 500px;height: 380px;}

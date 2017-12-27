@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
+    <title>发布交易单-买入</title>
+    <link href="css/hb-style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load("body", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//全局默认字体
+        $youziku.load(".PingFangSC_L", "4997c0be14e24128a91eba4ff7d3df99", "PingFangSC_L");//苹方纤黑
+        $youziku.load(".PingFangSC_R", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//苹方细黑
+        $youziku.load(".PingFangSC", "d31e2c91332b470090369540755c109f", "PingFangSC");//苹方黑体
+        $youziku.draw();
+    </script>
+</head>
+<body>
+<div class="mask" style="display: block;"></div>
+<!--发布交易单弹出 begin-->
+<div class="pop" style="display: none;width: 360px;height:500px;margin:-250px 0 0 -180px;">
+    <div class="pop-top p-bt10">
+        <span class="icon-off-grey"></span>
+        <p class="marl20 p-top20 font14">发布交易单</p>
+        <p class="color-light marl20 mart15"><span>买单保证金：0.02BTC</span></p>
+    </div>
+    <div class="pop-main-deal">
+        <div class="tab-group font13 clearfix">
+            <a class="current">买入BTC</a>
+            <a class="">卖出BTC</a>
+        </div>
+        <div class="mart20">
+            <form class="md-form" style="display: none;" title="买入">
+                <div class="md-form-item">
+                    <label class="md-form-item_label md-button-block">
+                        <span class="">
+                            <input type="checkbox" class="read-end">
+                            <em>以指数价格自动设定</em>
+                        </span>
+                        <span class="pull-right">当前指数：105,579.44</span>
+                    </label>
+                </div>
+                <div class="form-item-inline">
+                    <div class="md-form-item" style="width: 60%;">
+                        <label class="md-form-item_label md-button-block">
+                            <span>价格</span>
+                        </label>
+                        <div class="md-form-item_content">
+                            <div class="md-input">
+                                <input class="md-input_inner" value="29474">
+                                <span class="unit color-no">BTC</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-form-item pull-right" style="width: 35%;">
+                        <label class="md-form-item_label md-button-block">
+                            <span>浮动比例</span>
+                        </label>
+                        <div class="md-form-item_content">
+                            <div class="md-input">
+                                <input class="md-input_inner" value="100">
+                                <span class="unit color-no">%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item">
+                    <label class="md-form-item_label">数量</label>
+                    <div class="md-form-item_content">
+                        <div class="md-input">
+                            <input class="md-input_inner" value="20,0394.30">
+                            <span class="unit color-no">BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item disable">
+                    <label class="md-form-item_label">金额</label>
+                    <div class="md-form-item_content">
+                        <div class="md-input">
+                            <div class="md-input_inner2 color-up">
+                                <span class="color-link">102,185.67</span>
+                            </div>
+                            <span class="unit color-no">CYN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item">
+                    <div class="md-form-item_content">
+                        <button type="button" class="md-button md-button-buy md-button-big md-button-block mart20 "><span>买入</span></button>
+                    </div>
+                </div>
+            </form>
+            <form class="md-form" style="display: ;" title="卖出">
+                <div class="md-form-item">
+                    <label class="md-form-item_label md-button-block">
+                        <span class="">
+                            <input type="checkbox" class="read-end">
+                            <em>以指数价格自动设定</em>
+                        </span>
+                        <span class="pull-right">当前指数：105,579.44</span>
+                    </label>
+                </div>
+                <div class="md-form-item">
+                    <label class="md-form-item_label md-button-block">
+                        <span>价格</span>
+                    </label>
+                    <div class="md-form-item_content">
+                        <div class="md-input">
+                            <input class="md-input_inner" value="29474">
+                            <span class="unit color-no">BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item">
+                    <label class="md-form-item_label">数量</label>
+                    <div class="md-form-item_content">
+                        <div class="md-input">
+                            <input class="md-input_inner" value="20,0394.30">
+                            <span class="unit color-no">BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item disable">
+                    <label class="md-form-item_label">金额</label>
+                    <div class="md-form-item_content">
+                        <div class="md-input">
+                            <div class="md-input_inner2 color-up">
+                                <span class="color-link">102,185.67</span>
+                            </div>
+                            <span class="unit color-no">CYN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item">
+                    <div class="md-form-item_content">
+                        <button type="button" class="md-button md-button-sale md-button-big md-button-block mart20 "><span>卖出</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <p class="color-no mart10">成交后将收取平台服务费：3.00%</p>
+    </div>
+    <!--验证提示begin-->
+    <div class="form-message-alert" style="display: block;">请输入买入数量</div>
+    <!--验证提示over-->
+</div>
+<!--发布交易单弹出 over-->
+<!--买入确认提示框 begin-->
+<div class="pop" style="display: block;width: 360px;height:460px;margin:-230px 0 0 -180px;">
+    <div class="pop-top">
+        <span class="icon-off-grey"></span>
+        <p class="marl20 p-top20 font14 color-up">买入</p>
+    </div>
+    <div class="pop-main-deal pop-main-white pop-has-bottom">
+        <div class="account-info font13 clearfix">
+            <div class="pull-left">
+                <p class="color-light">委托人</p>
+                <p class="color-high">刘**</p>
+            </div>
+            <div class="pull-left">
+                <p class="color-light">单数</p>
+                <p class="color-high">123</p>
+            </div>
+            <div class="pull-left">
+                <p class="color-light">完成率</p>
+                <p class="color-high">99.55%</p>
+            </div>
+        </div>
+        <form class="md-form mart20">
+            <div class="md-form-item">
+                <label class="md-form-item_label md-button-block">
+                    <span>价格</span>
+                </label>
+                <div class="md-form-item_content">
+                    <div class="md-input">
+                        <input class="md-input_inner" value="29474">
+                        <span class="unit color-no">CYN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item">
+                <label class="md-form-item_label">数量</label>
+                <div class="md-form-item_content">
+                    <div class="md-input">
+                        <input class="md-input_inner" value="20,0394.30">
+                        <span class="unit color-no">BTC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item disable">
+                <label class="md-form-item_label">金额</label>
+                <div class="md-form-item_content">
+                    <div class="md-input">
+                        <div class="md-input_inner2 color-up">
+                            <span class="color-link">102,185.67</span>
+                        </div>
+                        <span class="unit color-no">CYN</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="pop-bottom text-right">
+        <button class="md-button md-button-quit"><span>取消</span></button>
+        <button class="md-button md-button-buy width-110 marl10"><span>确认买入</span></button>
+    </div>
+</div>
+<!--买入确认提示框 over-->
+<!--卖出确认提示框 begin-->
+<div class="pop" style="display: block;width: 360px;height:460px;margin:-230px 0 0 -180px;">
+    <div class="pop-top">
+        <span class="icon-off-grey"></span>
+        <p class="marl20 p-top20 font14 color-down">卖出</p>
+    </div>
+    <div class="pop-main-deal pop-main-white pop-has-bottom">
+        <div class="account-info font13 clearfix">
+            <div class="pull-left">
+                <p class="color-light">委托人</p>
+                <p class="color-high">刘**</p>
+            </div>
+            <div class="pull-left">
+                <p class="color-light">单数</p>
+                <p class="color-high">123</p>
+            </div>
+            <div class="pull-left">
+                <p class="color-light">完成率</p>
+                <p class="color-high">99.55%</p>
+            </div>
+        </div>
+        <form class="md-form mart20">
+            <div class="md-form-item">
+                <label class="md-form-item_label md-button-block">
+                    <span>价格</span>
+                </label>
+                <div class="md-form-item_content">
+                    <div class="md-input">
+                        <input class="md-input_inner" value="29474">
+                        <span class="unit color-no">CYN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item">
+                <label class="md-form-item_label">数量</label>
+                <div class="md-form-item_content">
+                    <div class="md-input">
+                        <input class="md-input_inner" value="20,0394.30">
+                        <span class="unit color-no">BTC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item disable">
+                <label class="md-form-item_label">金额</label>
+                <div class="md-form-item_content">
+                    <div class="md-input">
+                        <div class="md-input_inner2 color-up">
+                            <span class="color-link">102,185.67</span>
+                        </div>
+                        <span class="unit color-no">CYN</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="pop-bottom text-right">
+        <button class="md-button md-button-quit"><span>取消</span></button>
+        <button class="md-button md-button-sale width-110 marl10"><span>确认卖出</span></button>
+    </div>
+</div>
+<!--卖出确认提示框 over-->
+</body>
+</html>
