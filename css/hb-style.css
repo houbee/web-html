@@ -535,7 +535,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .nav-item a.check em{background: #4b8cee;color: #b7d4fe;}
 .right-top{border-bottom: 1px solid #eeeff0;padding:20px 0;}
 .right-main{padding:10px 20px 50px 20px;min-height:500px;}
-.right-main-normal{min-height: auto;}
+.right-main-normal{min-height: ;}
 .md-form-update{width:35%;}
 
 /*index*/
@@ -626,7 +626,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .online.cur:before{background: #51bd68;}
 .data-list li .md-button-small{padding:5px 14px;}
 .canvas-big{height:240px;}
-.hq-top{padding:14px 20px;background: #fff;border-radius：5px;box-shadow: 0 2px 6px rgba(52,63,75,.08);}
+.hq-top{padding:14px 20px;background: #fff;border-radius:5px;box-shadow: 0 2px 6px rgba(52,63,75,.08);}
 .hq-top .pull-right .pull-left{padding-left:50px;}
 
 /*admin*/
