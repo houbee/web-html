@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
+    <title>时间设置</title>
+    <link href="../css/hb-style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load("body", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//全局默认字体
+        $youziku.load(".PingFangSC_L", "4997c0be14e24128a91eba4ff7d3df99", "PingFangSC_L");//苹方纤黑
+        $youziku.load(".PingFangSC_R", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//苹方细黑
+        $youziku.load(".PingFangSC", "d31e2c91332b470090369540755c109f", "PingFangSC");//苹方黑体
+        $youziku.draw();
+    </script>
+</head>
+<body>
+<div class="admin-header clearfix">
+    <a href="#" class="admin-logo pull-left"></a>
+    <div class="pull-right">
+        <span>欢迎回来，18688886666</span>
+        <em>|</em>
+        <a href="#">返回首页</a>
+        <em>|</em>
+        <a href="#" class="color-link">退出登录</a>
+    </div>
+    <div class="search-box pull-right mart15">
+        <input class="ser-input_inner pull-left">
+        <button class="search-btn icon icon-ser"></button>
+    </div>
+</div>
+<div class="left">
+    <div class="menu-item show-menu">
+        <p>运维管理</p>
+        <ul>
+            <li><a href="#">用户管理</a></li>
+            <li class="current"><a href="#">每日对账</a></li>
+            <li><a href="#">转账审核</a></li>
+            <li><a href="#">日志</a></li>
+            <li><a href="#">公告管理</a></li>
+        </ul>
+    </div>
+    <div class="menu-item">
+        <p>设置</p>
+        <ul>
+            <li><a href="#">交易时间设置</a></li>
+            <li><a href="#">提充币设置</a></li>
+            <li><a href="#">交易设置</a></li>
+            <li><a href="#">审核设置</a></li>
+        </ul>
+    </div>
+    <div class="menu-item">
+        <p>货币管理</p>
+        <ul>
+            <li><a href="#">订单管理</a></li>
+            <li><a href="#">转帐管理</a></li>
+        </ul>
+    </div>
+</div>
+<div class="right">
+    <div class="right-in">
+        <div class="right-in-title font14"><span>交易时间设置</span></div>
+        <div class="right-in-main">
+            <form class="md-form" style="width: 300px;">
+                <div class="md-form-item">
+                    <label class="md-form-item_label">币种</label>
+                    <div class="md-form-item_content">
+                        <div class="md-input">
+                            <div class="md-select ">
+                                <p class="md-selected">
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>选择币种</span>
+                                </p>
+                                <ul class="md-dropdown">
+                                    <li>
+                                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                        <span>比特币</span>
+                                    </li>
+                                    <li class="checked">
+                                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                        <span>比特币</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                        <span>比特币</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                        <span>比特币</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                        <span>比特币</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-in-border">
+                    <div class="form-in-top">
+                        <div class="md-form-item md-form-label-left">
+                            <label class="md-form-item_label">上午开盘</label>
+                            <div class="md-form-item_content  pull-right">
+                                    这是你的开关
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-form-item md-form-label-left">
+                        <label class="md-form-item_label">上午开盘时间：</label>
+                        <div class="md-form-item_content" style="width: 65%;">
+                            <div class="md-input input-time">
+                                <input class="md-input_inner">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-form-item md-form-label-left">
+                        <label class="md-form-item_label">上午收盘时间：</label>
+                        <div class="md-form-item_content" style="width: 65%;">
+                            <div class="md-input input-time">
+                                <input class="md-input_inner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-in-border mart20">
+                    <div class="md-form-item md-form-label-left">
+                        <label class="md-form-item_label">下午开盘</label>
+                        <div class="md-form-item_content  pull-right">
+                            这是你的开关
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form-item">
+                    <div class="md-form-item_content">
+                        <button type="button" class="md-button md-button-primary md-button-big md-button-block mart20"><span>保存设置</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
