@@ -153,6 +153,7 @@ input, select {
 .p-bt15{padding-bottom:15px;}
 .p-bt20{padding-bottom: 20px;}
 .p-bt80{padding-bottom: 80px;}
+.no-padding-top{padding-top:0!important;}
 /*color*/
 .color-up{color: #52a665!important;}
 .color-down{color: #ca413e!important;}
@@ -447,7 +448,7 @@ a.color-link:hover{text-decoration: underline;}
 a.md-button.md-button-primary:hover{color: #fff;}
 .md-button-big{padding: 13px 20px;}
 .md-form-inline .md-button{position: relative;top: 2px;}
-.md-button-small{padding:5px 6px;font-size: 12px;}
+.md-button-small{padding:6px 10px;font-size: 12px;}
 .md-button-text{background: none;border:0;color:#b1bcc8;}
 .md-button-block{display: block;width: 100%;}
 .md-button-primary {
@@ -600,7 +601,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .our-link li:hover .info-pop{opacity: 1;z-index: 0;top:-5%;transition: 0.3s;}
 /*c2c交易*/
 .deal-box{width: 35%;background: #fff;border-radius:5px;box-shadow:0 2px 6px rgba(52,63,75,.08);min-height: 310px;}
-.deal-inner{padding:20px;}
+.deal-inner{padding:15px 20px;}
 .right-narmal-box{background: #fff;border-radius:5px;box-shadow:0 2px 6px rgba(52,63,75,.08);}
 .account-info{background: #fafbfd;border:1px solid #e3e7ed;border-radius:4px;padding:15px 10px;}
 .account-info .pull-left{width: 33.3%;text-indent: 5px;}
@@ -623,6 +624,8 @@ a.md-button.md-button-primary:hover{color: #fff;}
 
 .deal-box2{height: 415px;}
 .data-scroll{ overflow-y:auto;height: 150px;}
+.data-scroll-mine{ overflow-y:auto;height: 330px;}
+
 .data-header,.data-list{padding: 0 15px;}
 .data-header{margin-right: 16px;}
 .data-header li,.data-list li{display: inline-block;float: left;width: 15%;line-height:30px;text-indent:5px;}
@@ -637,6 +640,10 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .hq-top{padding:14px 20px;background: #fff;border-radius:5px;box-shadow: 0 2px 6px rgba(52,63,75,.08);}
 .hq-top .pull-right .pull-left{padding-left:50px;}
 
+.data-header-mine li,.data-list-mine li{display: inline-block;float: left;width: 15%;line-height:30px;text-indent:18px;}
+.data-list-mine li{line-height: 40px;}
+.data-header-mine{border-bottom:1px solid #eff0f1;}
+.data-list-mine:hover{background: #fafafb;}
 /*admin*/
 .menu-item p{line-height:50px;font-size: 14px;padding-left: 30px;position: relative;cursor: pointer;}
 .menu-item p:before{content: '';width:8px;height:8px;position: absolute;background: url("../img/icon-arrow.png") no-repeat center;
@@ -901,6 +908,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
     .deal-box2{height: 500px;}
 	.data-header li,.data-list li{line-height:37px;}
     .data-scroll{height: 190px;}
+	.data-scroll-mine{height:415px;}
 	.canvas-big{height:310px;}
 	.order-table td{line-height: 30px;}
 	.order-table thead th{line-height: 40px;}
