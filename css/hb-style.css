@@ -626,7 +626,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .data-scroll{ overflow-y:auto;height: 150px;}
 .data-scroll-mine{ overflow-y:auto;height: 330px;}
 
-.data-header,.data-list{padding: 0 15px;}
+.data-header,.data-list{padding: 0 15px;height: 30px;overflow: hidden;}
 .data-header{margin-right: 16px;}
 .data-header li,.data-list li{display: inline-block;float: left;width: 15%;line-height:30px;text-indent:5px;}
 .data-header li:first-child,.data-list li:first-child{width: 16%;}
@@ -664,7 +664,6 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .md-tabs-normal{line-height: 50px;border-bottom: 1px solid #eeeff0;background: #fff;padding-left: 20px;font-size:14px;}
 .md-tabs-normal a{display: inline-block;padding:0 20px;}
 .md-tabs-normal a.active{color:#4b8cee;}
-.md-tab-pane{display: none;}
 
 
 
