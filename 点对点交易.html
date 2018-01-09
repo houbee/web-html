@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
     <title>点对点交易</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link href="css/hb-style.css" rel="stylesheet">
     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
     <script type="text/javascript">
@@ -587,7 +588,7 @@
                                                 <td>
                                                     <div class="td-div-in clearfix">
                                                         <div class="pull-left">
-                                                            <p class="color-up strong">待支付</p>
+                                                            <p class="color-info strong">待支付</p>
                                                             <p class="mart15"><a class="md-button md-button-primary"><span>已支付</span></a></p>
                                                         </div>
                                                         <div class="pull-left">
@@ -766,8 +767,14 @@
                         </div>
                         <!--无数据begin-->
                         <div class="no-data-info text-center">
+                            <p class="no-data font20 color-grey">暂无未完成的订单</p>
+                            <p class="mart20 font14">温馨提示，超过三笔取消订单，将被冻结当天下单权限</p>
+                        </div>
+                        <!--无数据over-->
+                        <!--无数据begin-->
+                        <div class="no-data-info text-center">
                             <p class="no-data-img"><img src="img/no-data.png"></p>
-                            <p class="mart30">抱歉，你要找的内容可能在火星上</p>
+                            <p class="mart30 font14">抱歉，你要找的内容可能在火星上</p>
                         </div>
                         <!--无数据over-->
                     </div>
@@ -804,7 +811,7 @@
         </div>
     </div>
     <!--footer over-->
-    <div class="pop" style="display: block;width:450px;height:460px;margin:-230px 0 0 -225px;">
+    <div class="pop" style="display: none;width:450px;height:460px;margin:-230px 0 0 -225px;">
         <div class="pop-top">
             <span class="icon-off-grey"></span>
             <p class="pop-title font14"><span>确认支付</span></p>
