@@ -142,6 +142,7 @@ input, select {
 .marl10{margin-left: 10px;}
 .marl20{margin-left: 20px;}
 .marl40{margin-left:40px;}
+.marr5{margin-right:5px;}
 .marr10{margin-right:10px;}
 .marr15{margin-right:15px;}
 .marr20{margin-right:20px;}
@@ -199,7 +200,7 @@ a.color-link:hover{text-decoration: underline;}
 
 .bg-repeat-y{background: url("../img/bg.png") right repeat-y;border-top: 1px solid #eeeff0;}
 .img-auto img{width:100%;}
-.tag{display: inline-block;line-height:20px;padding:0px 5px;border-radius: 4px;color: #fff;font-size: 12px;}
+.tag{display: inline-block;line-height:20px;padding:0 5px;border-radius: 4px;color: #fff;font-size: 12px;}
 .tag-1{background: #e6b42e;}
 .tag-2{background: #6dc763;}
 /*icon*/
@@ -244,6 +245,10 @@ a.color-link:hover{text-decoration: underline;}
 .header{background: #fff;}
 .header-reg{background: #fff;box-shadow:0 4px 12px rgba(52,63,75,.06);}
 .header-reg .container{height:80px;}
+.header-bottom{height: 50px;line-height: 50px;background:#fafafb;box-shadow: inset 0 2px 13px rgba(52,63,75,.2)}
+.header-bottom a{display: inline-block;color:#767d85;line-height: 30px;padding:0 12px;margin:0 10px;}
+.header-bottom a:hover{color:#4b8cee;}
+.header-bottom a.active{background: #4b8cee;color:#fff;border-radius:4px;}
 .reg-nav li{display: inline-block;}
 .reg-nav li a{display: inline-block;color: #767d85;line-height:80px;margin: 0 20px;position: relative;}
 .reg-nav li a.active{color:#4b8cee;}
@@ -435,7 +440,17 @@ a.color-link:hover{text-decoration: underline;}
 .search-group .ser-input_inner{background: #fff;}
 .search-group-select{position: absolute;background: #fafafb;top:1px;left:1px;bottom:1px;border-radius:5px 0 0 5px;border-right:1px solid #eaebed;}
 .search-group-selected{text-indent:10px;position: relative;}
-.search-group-selected:after{content:'';border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #969fa9;position:absolute;top:50%;right:10px;margin-top:-2px;}
+.search-group-selected:after{content:'';
+	width: 0;
+	height:0;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid #969fa9;
+	position:absolute;
+	top:50%;
+	right:10px;
+	margin-top:-2px;
+}
 
 
 .md-button {
@@ -956,6 +971,8 @@ a.md-button.md-button-primary:hover{color: #fff;}
 	.order-table thead th{line-height: 40px;}
 	.icon-info{margin-left:10px;}
 	.message-pop{left:25%;}
+	.header-bottom{height: 80px;line-height: 80px;}
+	.header-bottom a{line-height: 50px;padding:0 15px;margin:0 15px;font-size: 14px;}
 }
 
 
