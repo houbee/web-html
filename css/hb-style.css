@@ -173,6 +173,7 @@ a.color-link:hover{text-decoration: underline;}
 .strong{font-weight: bold;}
 /*width*/
 .width-60{width: 60px!important;}
+.width-80{width: 80px!important;}
 .width-90{width: 90px!important;}
 .width-110{width: 110px!important;}
 .width-160{width: 160px!important;}
@@ -198,6 +199,9 @@ a.color-link:hover{text-decoration: underline;}
 
 .bg-repeat-y{background: url("../img/bg.png") right repeat-y;border-top: 1px solid #eeeff0;}
 .img-auto img{width:100%;}
+.tag{display: inline-block;line-height:20px;padding:0px 5px;border-radius: 4px;color: #fff;font-size: 12px;}
+.tag-1{background: #e6b42e;}
+.tag-2{background: #6dc763;}
 /*icon*/
 .icon{display: inline-block;background-size:100%;background-position: center;background-repeat: no-repeat;}
 .icon-up,.icon-down{width: 5px;height: 9px;background-image: url("../img/icon-up.png");}
@@ -227,6 +231,13 @@ a.color-link:hover{text-decoration: underline;}
 .icon-wechat-pay{background-image: url("../img/icon-wechat.png");}
 .icon-alipay{background-image: url("../img/icon-alipay.png");}
 .pay-method .icon{ float: left;}
+.icon-edit,.icon-stop,.icon-re,.icon-lock,.icon-dor{display:inline-block;width: 26px;height:26px;vertical-align: -8px;background-size: 50%;}
+.icon-edit{background-image: url("../img/ad-icon-edit.png");}
+.icon-stop{background-image: url("../img/ad-icon-stop.png");}
+.icon-re{background-image: url("../img/ad-icon-re.png");}
+.icon-lock{background-image: url("../img/ad-icon-lock.png");}
+.icon-dor{background-image: url("../img/ad-icon-do.png");}
+
 
 
 /*header and footer*/
@@ -725,7 +736,7 @@ a.md-button.md-button-primary:hover{color: #fff;}
 .user-rz-info li .pull-right .pull-left{position: relative;bottom:-5px;}
 .select-item span{display: inline-block;font-size: 13px;}
 .select-item span:hover{color: #4b8cee;}
-.select-item dd{display: inline-block;float: left;cursor: pointer;text-align: center;min-width: 80px;margin-right: 20px;}
+.select-item dd{display: inline-block;float: left;cursor: pointer;text-align: left;min-width: 60px;margin-right: 20px;padding-left:4px;}
 .pay-box{width:120px;height: 60px;margin-right:10px;background: url("../img/icon-arrow-r.png") no-repeat right center;background-size: 12px auto;position: relative;}
 .pay-method{width:130px;position: absolute;background: #fff;box-shadow: 0 12px 24px rgba(52,63,75,.12);border-radius:4px;overflow: hidden;top:100%;left:10px;}
 .pay-method dd{display:block;line-height: 36px;padding:0 10px;text-align: left;cursor: pointer;}

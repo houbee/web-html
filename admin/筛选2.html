@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no,width=device-width,height=device-height"/>
+    <title>筛选</title>
+    <link href="../css/hb-style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $youziku.load("body", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//全局默认字体
+        $youziku.load(".PingFangSC_L", "4997c0be14e24128a91eba4ff7d3df99", "PingFangSC_L");//苹方纤黑
+        $youziku.load(".PingFangSC_R", "a96b9d0013b24b05911a4ade123f34c6", "PingFangSC_R");//苹方细黑
+        $youziku.load(".PingFangSC", "d31e2c91332b470090369540755c109f", "PingFangSC");//苹方黑体
+        $youziku.draw();
+    </script>
+</head>
+<body>
+<div class="admin-header clearfix">
+    <a href="#" class="admin-logo pull-left"></a>
+    <div class="pull-right">
+        <span>欢迎回来，18688886666</span>
+        <em>|</em>
+        <a href="#">返回首页</a>
+        <em>|</em>
+        <a href="#" class="color-link">退出登录</a>
+    </div>
+</div>
+<div class="left">
+    <div class="menu-item show-menu">
+        <p>运维管理</p>
+        <ul>
+            <li><a href="#">用户管理</a></li>
+            <li class="current"><a href="#">每日对账</a></li>
+            <li><a href="#">转账审核</a></li>
+            <li><a href="#">日志</a></li>
+            <li><a href="#">公告管理</a></li>
+        </ul>
+    </div>
+    <div class="menu-item">
+        <p>设置</p>
+        <ul>
+            <li><a href="#">交易时间设置</a></li>
+            <li><a href="#">提充币设置</a></li>
+            <li><a href="#">交易设置</a></li>
+            <li><a href="#">审核设置</a></li>
+        </ul>
+    </div>
+    <div class="menu-item">
+        <p>货币管理</p>
+        <ul>
+            <li><a href="#">订单管理</a></li>
+            <li><a href="#">转帐管理</a></li>
+        </ul>
+    </div>
+</div>
+<div class="right">
+    <div class="md-tabs">
+        <span class="font14 mart20 inline-block color-black strong">每日对账</span>
+        <div class="search-box input-search pull-right mart10  marr20">
+            <input class="ser-input_inner pull-left" placeholder="Search">
+            <button class="search-btn"></button>
+        </div>
+        <div class="search-box search-group input-search pull-right mart10 marr20">
+            <div class="search-group-select show-dropdown" style="width: 30%;">
+                <p class="search-group-selected">
+                    <span>选择币种</span>
+                </p>
+                <ul class="md-dropdown">
+                    <li><span>比特币</span></li>
+                    <li class="checked"><span>比特币</span></li>
+                    <li><span>比特币</span></li>
+                    <li><span>比特币</span></li>
+                </ul>
+            </div>
+            <input class="ser-input_inner pull-left" style="text-indent: 35%;" placeholder="Search2">
+            <button class="search-btn"></button>
+        </div>
+    </div>
+    <div class="screen-box clearfix">
+        <form class="md-form marl20">
+            <div class="md-form-item md-form-label-left">
+                <label class="md-form-item_label width-80">币种</label>
+                <div class="md-form-item_content" style="width: 200px;">
+                    <div class="md-input">
+                        <div class="md-select">
+                            <p class="md-selected">
+                                <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                <span>选择币种</span>
+                            </p>
+                            <ul class="md-dropdown">
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li class="checked">
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                                <li>
+                                    <span class="icon-coin"><img src="../img/icon-coin.png"></span>
+                                    <span>比特币</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-form-item md-form-label-left">
+                <label class="md-form-item_label width-80">开始时间</label>
+                <div class="md-form-item_content" style="width: 250px;">
+                    <div class="md-input input-time">
+                        <input class="md-input_inner">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="clearfix data-box mart10">
+            <div class="select-item">
+                <div class="clearfix">
+                    <span class="width-80 pull-left">交易类型:</span>
+                    <dl>
+                        <dd><span class="color-link">全部</span></dd>
+                        <dd><span>主动买入</span></dd>
+                        <dd><span>主动卖出</span></dd>
+                    </dl>
+                </div>
+                <div class="clearfix mart30">
+                    <span class="width-80 pull-left">交易方:</span>
+                    <dl>
+                        <dd><span>全部</span></dd>
+                        <dd><span class="color-link">买方</span></dd>
+                        <dd><span>卖方</span></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data-box">
+        <table class="table-data" width="100%">
+            <thead>
+                <tr>
+                    <td width="10%">
+                        <label>
+                            <input type="checkbox">
+                            <span>姓名</span>
+                        </label>
+                    </td>
+                    <td width="10%"><span>邮箱</span></td>
+                    <td width="10%"><span>证件认证</span></td>
+                    <td width="10%"><span>证件号码</span></td>
+                    <td width="60%"><span>操作</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox">
+                            <span class="color-link">liudehua</span>
+                        </label>
+                    </td>
+                    <td><span>world666@gmail.com</span></td>
+                    <td><span class="tag tag-1">实名认证</span></td>
+                    <td><span>130123049558392</span></td>
+                    <td>
+                        <a href="#" class="inline-block color-link"><i class="icon icon-edit"></i><span>修改用户信息</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-stop"></i><span>禁用账户</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-re"></i><span>重置银行卡验证次数</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-lock"></i><span>重置登录密码</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-dor"></i><span>重置交易密码</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox">
+                            <span class="color-link">liudehua</span>
+                        </label>
+                    </td>
+                    <td><span>world666@gmail.com</span></td>
+                    <td><span class="tag tag-2">照片认证</span></td>
+                    <td><span>130123049558392</span></td>
+                    <td>
+                        <a href="#" class="inline-block color-link"><i class="icon icon-edit"></i><span>修改用户信息</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-stop"></i><span>禁用账户</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-re"></i><span>重置银行卡验证次数</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-lock"></i><span>重置登录密码</span></a>
+                        <a href="#" class="inline-block color-link marl10"><i class="icon icon-dor"></i><span>重置交易密码</span></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="md-pagination mart30">
+            <button type="button" class="md-btn-prev disabled"><i class="el-icon el-icon-arrow-left"></i></button>
+            <ul class="md-pager">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">下一页</a></li>
+            </ul>
+            <button type="button" class="md-btn-next disabled"><i class="el-icon el-icon-arrow-left"></i></button>
+            <a href="#" class="page-btn">尾页</a>
+        </div>
+        <div class="handle-box">
+            <span>已选中2项</span>
+            <em class="marl10">|</em>
+            <a href="#" class="color-link marl10">通过</a>
+            <a href="#" class="color-link marl10">驳回</a>
+            <a href="#" class="color-link marl10">删除</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
