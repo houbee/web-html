@@ -1011,9 +1011,15 @@ a.md-button.md-button-primary:hover{color: #fff;}
 	.header-bottom a{line-height: 50px;padding:0 15px;margin:0 15px;font-size: 14px;}
 }
 
-
-
-
+/*reset el*/
+.el-input, .el-input__inner{line-height: 38px;height: 38px;}
+pre {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
 
 
 
